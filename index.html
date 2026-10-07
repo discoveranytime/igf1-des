@@ -12,13 +12,13 @@ try{var _t=localStorage.getItem("igf1-des-theme");if(_t==="light"||_t==="dark")d
 :root{
   --bg0:#06070d; --bg1:#000000;
   --ink:#c8d1ec; --muted:#8c96b4; --faint:#666f8c;
-  --sky:#c084fc; --sky-deep:#7e22ce;
-  --teal:#7e22ce; --teal-deep:#3b0764;
-  --org:#7e22ce; --org-deep:#3b0764;
-  --amber:#fbbf24; --rose:#fb7185; --cyan:#c084fc;
+  --sky:#2dd4bf; --sky-deep:#19786c;
+  --teal:#34d399; --teal-deep:#1b7c59;
+  --org:#34d399; --org-deep:#1b7c59;
+  --amber:#fbbf24; --rose:#22d3ee; --cyan:#2dd4bf;
   --card:#000000; --card2:#030408;
   --line:rgba(255,255,255,.09);
-  --grad:linear-gradient(100deg,#7e22ce 5%,#c084fc 50%,#7e22ce 95%);
+  --grad:linear-gradient(100deg,#22ce8f 5%,#84fced 50%,#22ce8f 95%);
   --ongrad:#000000;
   --radius:18px;
   --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,"Helvetica Neue",Arial,sans-serif;
@@ -30,15 +30,15 @@ body{font-family:var(--font);background:var(--bg0);color:var(--ink);
   font-size:1.06rem;line-height:1.75;overflow-x:clip;-webkit-font-smoothing:antialiased}
 .bg-grad{position:fixed;inset:0;z-index:0;pointer-events:none;
   background:
-    radial-gradient(900px 620px at 12% -6%, rgba(126, 34, 206,0.288), transparent 60%),
-    radial-gradient(820px 600px at 88% 22%, rgba(59, 7, 100,0.192), transparent 60%),
-    radial-gradient(1000px 800px at 50% 110%, rgba(59, 7, 100,0.192), transparent 62%),
-    radial-gradient(700px 500px at 78% 78%, rgba(192, 132, 252,0.096), transparent 60%)}
+    radial-gradient(900px 620px at 12% -6%, rgba(34,206,143,0.288), transparent 60%),
+    radial-gradient(820px 600px at 88% 22%, rgba(7,100,66,0.192), transparent 60%),
+    radial-gradient(1000px 800px at 50% 110%, rgba(7,100,66,0.192), transparent 62%),
+    radial-gradient(700px 500px at 78% 78%, rgba(132,252,237,0.096), transparent 60%)}
 #dots{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.85}
 .orb{position:fixed;z-index:0;pointer-events:none;border-radius:50%;filter:blur(90px)}
-.o1{width:520px;height:520px;left:-140px;top:6%;background:radial-gradient(circle,rgba(126, 34, 206,0.24),transparent 70%);animation:drift1 38s ease-in-out infinite alternate}
-.o2{width:460px;height:460px;right:-120px;top:38%;background:radial-gradient(circle,rgba(59, 7, 100,0.192),transparent 70%);animation:drift2 46s ease-in-out infinite alternate}
-.o3{width:430px;height:430px;left:24%;bottom:-160px;background:radial-gradient(circle,rgba(59, 7, 100,0.192),transparent 70%);animation:drift3 54s ease-in-out infinite alternate}
+.o1{width:520px;height:520px;left:-140px;top:6%;background:radial-gradient(circle,rgba(34,206,143,0.24),transparent 70%);animation:drift1 38s ease-in-out infinite alternate}
+.o2{width:460px;height:460px;right:-120px;top:38%;background:radial-gradient(circle,rgba(7,100,66,0.192),transparent 70%);animation:drift2 46s ease-in-out infinite alternate}
+.o3{width:430px;height:430px;left:24%;bottom:-160px;background:radial-gradient(circle,rgba(7,100,66,0.192),transparent 70%);animation:drift3 54s ease-in-out infinite alternate}
 @keyframes drift1{from{transform:translate(0,0)}to{transform:translate(120px,80px)}}
 @keyframes drift2{from{transform:translate(0,0)}to{transform:translate(-100px,-70px)}}
 @keyframes drift3{from{transform:translate(0,0)}to{transform:translate(90px,-80px)}}
@@ -67,13 +67,13 @@ body{font-family:var(--font);background:var(--bg0);color:var(--ink);
 [data-theme="light"]{
   --bg0:#e8ebf0; --bg1:#eef1f6;
   --ink:#1b2436; --muted:#4d5871; --faint:#707a93;
-  --sky:#7e22ce; --sky-deep:#3b0764;
-  --teal:#3b0764; --teal-deep:#3b0764;
-  --org:#7e22ce; --org-deep:#3b0764;
-  --amber:#b45309; --rose:#e11d48; --cyan:#3b0764;
+  --sky:#168577; --sky-deep:#062521;
+  --teal:#188960; --teal-deep:#072a1d;
+  --org:#168577; --org-deep:#062521;
+  --amber:#b48305; --rose:#078ea3; --cyan:#188960;
   --card:#f8fafc; --card2:#e9edf3;
   --line:rgba(15,23,42,.14);
-  --grad:linear-gradient(100deg,#7e22ce,#3b0764,#7e22ce);
+  --grad:linear-gradient(100deg,#22ceb8,#076442,#22ceb8);
   --ongrad:#ffffff;
   color-scheme:light;
 }
@@ -119,7 +119,7 @@ nav.chapters a.active{color:#000000;background:var(--grad);border-color:transpar
   .toc .mini-bar{height:3px;background:rgba(255,255,255,.08);border-radius:99px;margin-top:.55rem;overflow:hidden}
   .toc .mini-bar i{display:block;height:100%;width:0;background:var(--grad);border-radius:99px}
 }
-.wrap{position:relative;z-index:1;max-width:960px;margin:0 auto;padding:0 1.25rem}
+.wrap{position:relative;z-index:1;max-width:1280px;margin:0 auto;padding:0 1.25rem}
 section.chapter{padding:4.2rem 0 1rem;scroll-margin-top:84px}
 .eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.78rem;font-weight:700;letter-spacing:.22em;
   text-transform:uppercase;color:var(--faint);margin-bottom:1rem}
@@ -129,7 +129,7 @@ h2{font-family:var(--disp);font-size:clamp(1.7rem,4vw,2.5rem);font-weight:800;le
 h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .lede{color:var(--muted);font-size:1.12rem;max-width:44rem;margin-bottom:2rem}
 .lede strong{color:var(--ink)}
-.hero{position:relative;z-index:1;text-align:center;padding:5.5rem 1.25rem 3.5rem;max-width:960px;margin:0 auto}
+.hero{position:relative;z-index:1;text-align:center;padding:5.5rem 1.25rem 3.5rem;max-width:1280px;margin:0 auto}
 .badge{display:inline-flex;align-items:center;gap:.55rem;font-size:.78rem;font-weight:700;letter-spacing:.18em;
   text-transform:uppercase;color:var(--ink);border:1px solid var(--line);background:rgba(255,255,255,.04);
   padding:.55rem 1.1rem;border-radius:999px;margin-bottom:1.6rem}
@@ -187,11 +187,11 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
   padding:.3rem .7rem;border-radius:8px;margin-top:.25rem}
 .kv .k.s{background:rgba(124,199,255,.12);color:var(--sky);border:1px solid rgba(124,199,255,.35)}
 .kv .k.t{background:rgba(94,234,212,.10);color:var(--teal);border:1px solid rgba(94,234,212,.35)}
-.kv .k.o{background:rgba(251,146,60,.12);color:var(--org);border:1px solid rgba(251,146,60,.35)}
+.kv .k.o{background:rgba(250,197,61,.12);color:var(--org);border:1px solid rgba(250,197,61,.35)}
 .kv .k.a{background:rgba(251,191,36,.12);color:var(--amber);border:1px solid rgba(251,191,36,.35)}
-.kv .k.g{background:rgba(251,113,133,.12);color:var(--rose);border:1px solid rgba(251,113,133,.35)}
+.kv .k.g{background:rgba(113,233,251,.12);color:var(--rose);border:1px solid rgba(113,233,251,.35)}
 .kv p{font-size:.99rem}
-.diagram{background:radial-gradient(600px 300px at 50% 0%,rgba(234,88,12,.10),transparent 70%),#000000;
+.diagram{background:radial-gradient(600px 300px at 50% 0%,rgba(234,172,12,.10),transparent 70%),#000000;
   border:1px solid var(--line);border-radius:var(--radius);padding:1.6rem;margin:0 0 1.4rem;overflow:hidden}
 .diagram svg{display:block;width:100%;height:auto}
 .diagram .cap{text-align:center;color:var(--faint);font-size:.85rem;margin-top:.9rem;letter-spacing:.03em}
@@ -208,7 +208,7 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .ebar .row .v{font-size:.88rem;color:var(--faint);font-variant-numeric:tabular-nums}
 .ebar .track{height:14px;background:rgba(255,255,255,.06);border-radius:999px;overflow:hidden;border:1px solid var(--line)}
 .ebar .fill{height:100%;width:0;border-radius:999px;transition:width 1.6s cubic-bezier(.2,.7,.2,1)}
-.in .ebar .fill{width:var(--w)}
+.ebar.in .fill{width:var(--w)}
 .ebar .note{font-size:.85rem;color:var(--faint);margin-top:.45rem}
 .anec-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
 @media(max-width:720px){.anec-grid{grid-template-columns:1fr}}
@@ -243,8 +243,8 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .scard p{color:var(--muted);font-size:.95rem}
 .scard p strong{color:var(--ink)}
 .lvl-known .level{background:rgba(251,191,36,.1);color:var(--amber);border:1px solid rgba(251,191,36,.4)}
-.lvl-theory .level{background:rgba(251,146,60,.1);color:var(--org);border:1px solid rgba(251,146,60,.4)}
-.lvl-unknown .level{background:rgba(251,113,133,.1);color:var(--rose);border:1px solid rgba(251,113,133,.4)}
+.lvl-theory .level{background:rgba(250,197,61,.1);color:var(--org);border:1px solid rgba(250,197,61,.4)}
+.lvl-unknown .level{background:rgba(113,233,251,.1);color:var(--rose);border:1px solid rgba(113,233,251,.4)}
 .gloss{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card)}
 .g-item{border-bottom:1px solid var(--line)}
 .g-item:last-child{border-bottom:none}
@@ -265,10 +265,9 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 @keyframes gaBreathe{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
 @keyframes gaTilt{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg)}}
 .g-a{max-height:0;overflow:hidden;transition:max-height .45s ease}
-.g-a .gsci,.g-a .gex{padding:0 1.4rem 1rem;color:var(--muted);font-size:.95rem}
-.g-a .gsci strong,.g-a .gex strong{color:var(--ink)}
+.g-a .gsci{padding:0 1.4rem 1rem;color:var(--muted);font-size:.95rem}
+.g-a .gsci strong{color:var(--ink)}
 .gslabel{display:block;font-size:.7rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);margin-bottom:.35rem}
-.g-a .gex{margin:0 1.4rem 1rem;padding:0 0 0 1rem;border-left:2px solid var(--line)}
 .g-a .plain{margin:0 1.4rem 1.3rem;background:rgba(255,255,255,.035);border:1px dashed rgba(255,255,255,.22);
   border-radius:12px;padding:1rem 1.2rem;font-size:.96rem;color:var(--muted)}
 .g-a .plain b{color:var(--ink)}
@@ -281,7 +280,7 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .take h4{font-size:1.05rem;font-weight:800;margin-bottom:.4rem}
 .take p{color:var(--muted);font-size:.95rem}
 .take p strong{color:var(--ink)}
-.limits{background:rgba(251,113,133,.05);border:1px solid rgba(251,113,133,.3);border-radius:var(--radius);
+.limits{background:rgba(113,233,251,.05);border:1px solid rgba(113,233,251,.3);border-radius:var(--radius);
   padding:1.4rem 1.6rem;margin-bottom:1.6rem}
 .limits h3{font-family:var(--disp);font-size:1.2rem;font-weight:800;margin-bottom:.7rem;color:var(--rose)}
 .limits ul{list-style:none;display:grid;gap:.6rem}
@@ -322,7 +321,7 @@ table.trial tr td:first-child{color:var(--ink);font-weight:600}
   html{scroll-behavior:auto}
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
   .reveal{opacity:1;transform:none}
-  .in .ebar .fill{transition:none}
+  .ebar.in .fill{transition:none}
 }
 
 /* --- ambient motion additions: subtle, additive, non-intrusive --- */
@@ -336,6 +335,22 @@ table.trial tr td:first-child{color:var(--ink);font-weight:600}
 .flowseq2{stroke-dasharray:6 7;animation:dashmove 1.6s linear infinite,seqGlow 4.5s ease-in-out .9s infinite}
 .flowseq3{stroke-dasharray:6 7;animation:dashmove 1.6s linear infinite,seqGlow 4.5s ease-in-out 1.8s infinite}
 
+/* ===== benefit tiers + layman tiles (ch-benefits / ch-fit) ===== */
+.tier-head{display:flex;align-items:center;gap:.75rem;flex-wrap:wrap;margin:2.1rem 0 .6rem}
+.tbadge{display:inline-block;font-size:.68rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:.42rem .95rem;border-radius:999px;border:1px solid}
+.tbadge.est{background:rgba(74,222,128,.13);color:#4ade80;border-color:rgba(74,222,128,.45)}
+.tbadge.emg{background:rgba(96,165,250,.13);color:#93c5fd;border-color:rgba(96,165,250,.45)}
+.tbadge.anecb{background:rgba(251,191,36,.11);color:var(--amber);border-color:rgba(251,191,36,.42)}
+.tier-sub{color:var(--muted);font-size:.96rem;max-width:64ch;margin-bottom:1.1rem}
+.tier-sub strong{color:var(--ink)}
+.layman{position:relative;border:1px solid var(--line);border-radius:var(--radius);background:var(--card);padding:1rem 1.2rem 1rem 3rem;margin:1.3rem 0}
+.layman .ldot{position:absolute;left:1.2rem;top:1.4rem;width:10px;height:10px;border-radius:50%;background:#84fced}
+.layman .ldot::after{content:"";position:absolute;inset:-5px;border-radius:50%;border:2px solid #84fced;animation:udotPulse 2.2s ease-out infinite}
+.layman .llabel{font-weight:800;font-size:.92rem;margin-bottom:.25rem}
+.layman p{color:var(--muted);font-size:.95rem}
+@media (prefers-reduced-motion:reduce){.layman .ldot::after{animation:none;opacity:.35;transform:scale(.8)}}
+.fitline{margin-top:1.2rem;padding:1rem 1.2rem;border:1px dashed var(--line);border-radius:var(--radius);color:var(--muted);font-size:.95rem;text-align:center}
+.fitline strong{color:var(--ink)}
 /* ===== mini-poll component ===== */
 /* Mini-poll component styles — compact, theme-aware via CSS vars with fallbacks.
    Works inside the infographic page (which defines --card, --ink, etc.)
@@ -348,7 +363,7 @@ mini-poll { display: block; }
   border-radius: 18px;
   background:
     linear-gradient(var(--card, #000000), var(--card, #000000)) padding-box,
-    linear-gradient(135deg, var(--mpc1, #fdba74), var(--mpc2, #a3e635)) border-box;
+    linear-gradient(135deg, var(--mpc1, #fbd676), var(--mpc2, #a3e635)) border-box;
   font-family: inherit;
   overflow: hidden;
 }
@@ -363,8 +378,8 @@ mini-poll { display: block; }
 .mpoll-teaser:focus-visible { outline: 2px solid var(--amber, #fbbf24); outline-offset: -2px; }
 .mpoll-teaser-dot {
   flex: 0 0 auto; width: 8px; height: 8px; border-radius: 50%;
-  background: var(--mpc1, #fdba74);
-  box-shadow: 0 0 10px var(--mpc1, #fdba74);
+  background: var(--mpc1, #fbd676);
+  box-shadow: 0 0 10px var(--mpc1, #fbd676);
   animation: mpulse 2.4s ease-in-out infinite;
 }
 @keyframes mpulse { 0%,100% { opacity: .55; } 50% { opacity: 1; } }
@@ -398,7 +413,7 @@ mini-poll { display: block; }
   display: flex; align-items: center; justify-content: center; gap: .6rem;
   max-width: 620px; margin: 0 auto 1.4rem; padding: .6rem 1.2rem;
   border-radius: 999px; font-size: .82rem; font-weight: 700; color: #000000;
-  background: linear-gradient(100deg, var(--acc1, #fdba74), var(--acc2, #a3e635), var(--acc3, #fb923c));
+  background: linear-gradient(100deg, var(--acc1, #fbd676), var(--acc2, #a3e635), var(--acc3, #fac53d));
 }
 .mpoll-topbanner-dot {
   flex: 0 0 auto; width: 8px; height: 8px; border-radius: 50%;
@@ -428,7 +443,7 @@ mini-poll { display: block; }
   display: block; width: 100%; margin-top: .9rem; padding: .8rem;
   border: 0; border-radius: 12px; cursor: pointer;
   font-size: 1rem; font-weight: 800; color: #000000;
-  background: linear-gradient(100deg, var(--acc1, #fdba74), var(--acc2, #a3e635));
+  background: linear-gradient(100deg, var(--acc1, #fbd676), var(--acc2, #a3e635));
   transition: transform .15s, opacity .15s;
 }
 .mpoll-vote:hover:not(:disabled), .mpoll-again:hover { transform: translateY(-1px); }
@@ -450,7 +465,7 @@ mini-poll { display: block; }
 }
 .mpoll-fill {
   height: 100%; width: 0; border-radius: 999px;
-  background: linear-gradient(90deg, var(--acc1, #fdba74), var(--acc2, #a3e635), var(--acc3, #fb923c));
+  background: linear-gradient(90deg, var(--acc1, #fbd676), var(--acc2, #a3e635), var(--acc3, #fac53d));
   transition: width .9s cubic-bezier(.22,.8,.3,1);
 }
 .mpoll-row.mine .mpoll-fill { box-shadow: 0 0 10px rgba(251,191,36,.45); }
@@ -479,13 +494,47 @@ mini-poll { display: block; }
 
 .topdisc{max-width:760px;margin:1rem auto 0;font-size:.84rem;color:var(--muted);border:1px solid var(--line);border-radius:12px;padding:.6rem 1rem;background:rgba(255,255,255,.025);text-align:center;line-height:1.55}
 .kv .k{flex:0 1 auto;min-width:0}
+
+/* ---- IGF-1 DES enhancement diagrams ---- */
+.desflow{stroke-dasharray:6 7;animation:dashmove 1.6s linear infinite}
+@keyframes dashmove{to{stroke-dashoffset:-26}}
+.nodefire{transform-box:fill-box;transform-origin:center;animation:nodefire 4.8s ease-in-out infinite}
+@keyframes nodefire{0%,100%{transform:scale(1);opacity:.55}10%{transform:scale(1.12);opacity:1}26%{transform:scale(1);opacity:.55}}
+.nf1{animation-delay:0s}.nf2{animation-delay:.8s}.nf3{animation-delay:1.6s}.nf4{animation-delay:2.4s}.nf5{animation-delay:3.2s}.nf6{animation-delay:4s}
+.beadrow{transform-box:fill-box;transform-origin:center;animation:beadfloat 5s ease-in-out infinite}
+@keyframes beadfloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+.clipmark{animation:clipflash 3.2s ease-in-out infinite}
+@keyframes clipflash{0%,100%{opacity:.35}12%{opacity:1}30%{opacity:.35}}
+.pulsebar{animation:pulsebar 3s ease-in-out infinite}
+@keyframes pulsebar{0%,100%{opacity:.5}50%{opacity:1}}
+.vscard-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;margin:1rem 0}
+.vscard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.2rem}
+.vscard h3{margin:0 0 .5rem;font-size:1rem}
+.vscard .vsrow{margin:.45rem 0;font-size:.9rem;color:var(--ink)}
+.vscard .vsrow b{color:var(--ink)}
+.vscard .vsk{font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin-top:.7rem}
+.vscard .vsk:first-child{margin-top:0}
+.verdict{background:linear-gradient(135deg,rgba(132,252,237,.12),rgba(34,206,143,.08));border:1px solid var(--line);border-radius:var(--radius);padding:1.2rem 1.4rem;margin:1.2rem 0}
+.does-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1rem 0}
+@media(max-width:720px){.does-grid{grid-template-columns:1fr}}
+.does-col{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.2rem 1.3rem}
+.does-col h3{margin:0 0 .6rem;font-size:1.02rem}
+.does-col ul{margin:.4rem 0;padding-left:1.1rem;font-size:.92rem;color:var(--ink)}
+.does-col li{margin:.4rem 0}
+.evbadge{display:inline-block;font-size:.7rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:.25rem .6rem;border-radius:999px;margin-bottom:.5rem}
+.ev-dish{background:rgba(132,252,237,.16);color:#84fced;border:1px solid rgba(132,252,237,.4)}
+.ev-none{background:rgba(113,233,251,.12);color:#71e9fb;border:1px solid rgba(113,233,251,.4)}
+.ev-context{background:rgba(148,163,184,.12);color:#94a3b8;border:1px solid rgba(148,163,184,.4)}
+.subhead{font-size:1.25rem;font-weight:800;margin:1.8rem 0 .4rem;color:var(--ink)}
+.bridge{max-width:62ch;margin:1rem auto 1.4rem;color:var(--ink);font-size:.98rem;line-height:1.65}
+.bridge strong{color:var(--ink)}
 </style>
 </head>
 <body>
 <svg class="sr-only" aria-hidden="true" focusable="false">
   <defs>
     <linearGradient id="triGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#3b0764"/><stop offset="50%" stop-color="#7e22ce"/><stop offset="100%" stop-color="#c084fc"/>
+      <stop offset="0%" stop-color="#076442"/><stop offset="50%" stop-color="#22ce8f"/><stop offset="100%" stop-color="#84fced"/>
     </linearGradient>
   </defs>
 </svg>
@@ -510,15 +559,18 @@ mini-poll { display: block; }
   <a href="#ch2"><span class="n">02</span>The Short Version</a>
   <a href="#ch3"><span class="n">03</span>How It Might Work</a>
   <a href="#ch4"><span class="n">04</span>Evidence Check</a>
-  <a href="#ch5"><span class="n">05</span>What People Say</a>
-  <a href="#ch6"><span class="n">06</span>Risks &amp; Unknowns</a>
-  <a href="#ch7"><span class="n">07</span>Glossary</a>
-  <a href="#ch8"><span class="n">08</span>Takeaways</a>
+  <a href="#ch-benefits"><span class="n">05</span>Potential Benefits</a>
+  <a href="#ch-fit"><span class="n">06</span>Who It May Suit</a>
+  <a href="#ch5"><span class="n">07</span>Community Reports</a>
+  <a href="#ch6"><span class="n">08</span>Risks &amp; Unknowns</a>
+  <a href="#ch7"><span class="n">09</span>DES vs the Field</a>
+  <a href="#ch8"><span class="n">10</span>Understanding IGF-1 DES Terminology</a>
+  <a href="#ch9"><span class="n">11</span>Takeaways</a>
   <div class="mini"><span>Read</span><span id="tocPct">0%</span></div>
   <div class="mini-bar"><i id="tocBar"></i></div>
 </aside>
 <nav class="chapters" aria-label="Chapters"><div class="rail" id="rail">
-  <a href="#ch1">01 · Fragment</a><a href="#ch2">02 · Origin</a><a href="#ch3">03 · Mechanism</a><a href="#ch4">04 · Evidence</a><a href="#ch5">05 · Reports</a><a href="#ch6">06 · Risks</a><a href="#ch7">07 · Glossary</a><a href="#ch8">08 · Takeaways</a>
+  <a href="#ch1">01 · Fragment</a><a href="#ch2">02 · Origin</a><a href="#ch3">03 · Mechanism</a><a href="#ch4">04 · Evidence</a><a href="#ch-benefits">05 · Benefits</a><a href="#ch-fit">06 · Suitability</a><a href="#ch5">07 · Community</a><a href="#ch6">08 · Risks</a><a href="#ch7">09 · VS Field</a><a href="#ch8">10 · Terminology</a><a href="#ch9">11 · Takeaways</a>
 </div></nav>
 
 <header class="hero">
@@ -553,19 +605,59 @@ mini-poll { display: block; }
         <rect x="40" y="80" width="60" height="44" rx="10" fill="#1a1f30" stroke="#666f8c" stroke-width="2" stroke-dasharray="6 5"/>
         <text x="70" y="107" fill="#666f8c" text-anchor="middle" font-size="11" font-weight="800">1–3</text>
         <text x="70" y="140" fill="#666f8c" text-anchor="middle" font-size="11">removed</text>
-        <rect x="115" y="80" width="485" height="44" rx="10" fill="#070912" stroke="#c084fc" stroke-width="2.5" class="glow-pulse"/>
-        <text x="357" y="107" fill="#c084fc" text-anchor="middle" font-size="12" font-weight="800">AMINO ACIDS 4–70 · THE DES FRAGMENT</text>
+        <rect x="115" y="80" width="485" height="44" rx="10" fill="#070912" stroke="#84fced" stroke-width="2.5" class="glow-pulse"/>
+        <text x="357" y="107" fill="#84fced" text-anchor="middle" font-size="12" font-weight="800">AMINO ACIDS 4–70 · THE DES FRAGMENT</text>
       </g>
       <text x="320" y="170" fill="#666f8c" font-size="12" text-anchor="middle">Chopping the front three changes the shape — binding proteins grip it poorly</text>
-      <text x="320" y="200" fill="#c084fc" font-size="12" font-weight="700" text-anchor="middle">More potent than IGF-1 in the dish, far shorter-lived than LR3</text>
+      <text x="320" y="200" fill="#84fced" font-size="12" font-weight="700" text-anchor="middle">More potent than IGF-1 in the dish, far shorter-lived than LR3</text>
     </svg>
     <div class="cap">Three amino acids off the front — and the molecule behaves completely differently.</div>
-  </div>
+  </div><div class="diagram reveal">
+<h4 class="subhead" style="margin-top:0">Three versions, one family</h4>
+<svg viewBox="0 0 640 270" role="img" aria-label="Structure comparison: natural IGF-1, DES, and LR3">
+<g font-size="13" font-weight="800">
+<text x="20" y="58" fill="#c8d1ec">Natural IGF-1 · 70 aa</text>
+<g class="beadrow"><rect x="170" y="40" width="350" height="28" rx="10" fill="#070912" stroke="#8c96b4" stroke-width="2"/></g>
+<text x="170" y="92" fill="#8c96b4" font-size="11" font-weight="600">full chain — binding proteins grip it tightly</text>
+<text x="20" y="128" fill="#c8d1ec">DES · 67 aa</text>
+<g class="beadrow"><rect x="170" y="110" width="32" height="28" rx="8" fill="#0a353b" stroke="#71e9fb" stroke-width="2" class="clipmark"/><text x="186" y="129" fill="#71e9fb" font-size="12" text-anchor="middle">✕</text>
+<rect x="206" y="110" width="314" height="28" rx="10" fill="#070912" stroke="#84fced" stroke-width="2.5"/></g>
+<text x="252" y="162" fill="#8c96b4" font-size="11" font-weight="600">first 3 removed — the grip fails</text>
+<text x="20" y="198" fill="#c8d1ec">LR3 · 83 aa</text>
+<g class="beadrow"><rect x="170" y="180" width="350" height="28" rx="10" fill="#070912" stroke="#22ce8f" stroke-width="2"/><rect x="524" y="180" width="66" height="28" rx="10" fill="#0b2e2a" stroke="#fbbf24" stroke-width="2"/></g>
+<text x="170" y="232" fill="#8c96b4" font-size="11" font-weight="600">70 aa + 13-aa extension — grip fails, lasts ~a day</text>
+</g>
+<text x="320" y="258" fill="#666f8c" font-size="11" text-anchor="middle">DES shortens · LR3 extends · both dodge the binding proteins</text>
+</svg>
+<div class="cap">Same core, different wrappers — the wrapper decides how long it lasts and who grabs it.</div>
+</div>
+
 <div class="grid3">
     <div class="card sky reveal"><h3>IGF-1, shortened</h3><p><strong>Des(1-3) IGF-1</strong>: natural IGF-1 minus its first three amino acids. The truncation changes its shape enough that <strong>binding proteins grip it poorly</strong> — like LR3, it stays mostly free.</p></div>
     <div class="card teal reveal"><h3>Potent but fleeting</h3><p>More potent than natural IGF-1 at the receptor in lab studies — but with a <strong>half-life of minutes</strong>. A sprinter to LR3's marathon runner.</p></div>
     <div class="card org reveal"><h3>Research only</h3><p>IGF-1 DES has <strong>no human trials and no approved use</strong>. It even occurs naturally in tiny amounts during digestion — which proves nothing about injecting it.</p></div>
   </div>
+<h3 class="subhead reveal">Why the DES modification matters</h3>
+<div class="diagram reveal">
+<svg viewBox="0 0 640 230" role="img" aria-label="N-terminal close-up: the first three amino acids removed">
+<text x="20" y="24" fill="#8c96b4" font-size="13" font-weight="700" letter-spacing="2">THE CUT, UP CLOSE · POSITIONS 1–8</text>
+<g font-size="12" font-weight="800" text-anchor="middle">
+<g><rect x="40" y="60" width="52" height="52" rx="10" fill="#0a353b" stroke="#71e9fb" stroke-width="2" class="clipmark"/><text x="66" y="92" fill="#71e9fb">1✕</text></g>
+<g><rect x="100" y="60" width="52" height="52" rx="10" fill="#0a353b" stroke="#71e9fb" stroke-width="2" class="clipmark"/><text x="126" y="92" fill="#71e9fb">2✕</text></g>
+<g><rect x="160" y="60" width="52" height="52" rx="10" fill="#0a353b" stroke="#71e9fb" stroke-width="2" class="clipmark"/><text x="186" y="92" fill="#71e9fb">3✕</text></g>
+<g class="beadrow"><rect x="220" y="60" width="52" height="52" rx="10" fill="#070912" stroke="#84fced" stroke-width="2"/><text x="246" y="92" fill="#84fced">4</text></g>
+<g class="beadrow"><rect x="280" y="60" width="52" height="52" rx="10" fill="#070912" stroke="#84fced" stroke-width="2"/><text x="306" y="92" fill="#84fced">5</text></g>
+<g class="beadrow"><rect x="340" y="60" width="52" height="52" rx="10" fill="#070912" stroke="#84fced" stroke-width="2"/><text x="366" y="92" fill="#84fced">6</text></g>
+<g><rect x="460" y="60" width="140" height="52" rx="12" fill="#070912" stroke="#8c96b4" stroke-width="2" stroke-dasharray="6 5"/><text x="530" y="84" fill="#8c96b4" font-size="11">binding protein</text><text x="530" y="102" fill="#71e9fb" font-size="11">grip fails ✕</text></g>
+<path d="M212 112 L458 88" stroke="#71e9fb" stroke-width="2" stroke-dasharray="6 5" fill="none" class="desflow"/>
+</g>
+<text x="320" y="150" fill="#8c96b4" font-size="12" text-anchor="middle">The missing three change the molecule's shape at the binding site</text>
+<text x="320" y="172" fill="#84fced" font-size="12" font-weight="700" text-anchor="middle">Shape change → weak grip → more free fragment → stronger, shorter signal</text>
+<text x="320" y="204" fill="#666f8c" font-size="11" text-anchor="middle">What it does NOT prove: that the signal lands only where you want it to</text>
+</svg>
+<div class="cap">A three-block haircut at the front rewrites how the whole molecule behaves.</div>
+</div>
+<div class="bridge reveal"><strong>Small cut, big consequences.</strong> Removing three amino acids from the N-terminus reshapes the exact region binding proteins latch onto. With their grip weakened, more of the fragment stays free to hit the IGF-1 receptor — which is why DES is <strong>more potent than natural IGF-1 in the dish</strong>. But potency is not the same as a medical effect, and a shape change says nothing about <strong>where</strong> the molecule goes.</div>
   <div class="plain reveal"><div class="plabel">Plain English</div><p>If LR3 is IGF-1 in a <strong>fake mustache</strong>, DES is IGF-1 with a <strong>bad haircut</strong>: the disguise also fools the binding proteins, but the fragment <strong>burns out in minutes</strong>. Forums claim the short life means it acts only where it's put. That's a <strong>story, not a finding</strong>.</p></div>
 </section>
 <mini-poll slug="igf1-des-mini-ch1"
@@ -578,19 +670,19 @@ mini-poll { display: block; }
   <div class="diagram reveal">
     <svg viewBox="0 0 640 240" role="img" aria-label="A simplified timeline of IGF-1 DES">
 <line x1="40" y1="120" x2="600" y2="120" stroke="#1a1f30" stroke-width="3"/>
-<circle cx="70" cy="120" r="26" fill="none" stroke="#c084fc" stroke-width="2" opacity=".45" class="glow-pulse"/>
-<circle cx="70" cy="120" r="10" fill="#c084fc"/>
-<text x="70" y="70" fill="#c084fc" text-anchor="middle" font-size="13" font-weight="800">Digestion</text>
+<circle cx="70" cy="120" r="26" fill="none" stroke="#84fced" stroke-width="2" opacity=".45" class="glow-pulse"/>
+<circle cx="70" cy="120" r="10" fill="#84fced"/>
+<text x="70" y="70" fill="#84fced" text-anchor="middle" font-size="13" font-weight="800">Digestion</text>
 <text x="70" y="165" fill="#c8d1ec" text-anchor="middle" font-size="12" font-weight="800">Made naturally</text>
 <text x="70" y="185" fill="#666f8c" text-anchor="middle" font-size="11">Gut enzymes trim IGF-1</text>
-<circle cx="230" cy="120" r="26" fill="none" stroke="#7e22ce" stroke-width="2" opacity=".45" class="glow-pulse"/>
-<circle cx="230" cy="120" r="10" fill="#7e22ce"/>
-<text x="230" y="70" fill="#7e22ce" text-anchor="middle" font-size="13" font-weight="800">1990s</text>
+<circle cx="230" cy="120" r="26" fill="none" stroke="#22ce8f" stroke-width="2" opacity=".45" class="glow-pulse"/>
+<circle cx="230" cy="120" r="10" fill="#22ce8f"/>
+<text x="230" y="70" fill="#22ce8f" text-anchor="middle" font-size="13" font-weight="800">1990s</text>
 <text x="230" y="165" fill="#c8d1ec" text-anchor="middle" font-size="12" font-weight="800">Studied in labs</text>
 <text x="230" y="185" fill="#666f8c" text-anchor="middle" font-size="11">Potency characterized</text>
-<circle cx="410" cy="120" r="26" fill="none" stroke="#c084fc" stroke-width="2" opacity=".45" class="glow-pulse"/>
-<circle cx="410" cy="120" r="10" fill="#c084fc"/>
-<text x="410" y="70" fill="#c084fc" text-anchor="middle" font-size="13" font-weight="800">2000s</text>
+<circle cx="410" cy="120" r="26" fill="none" stroke="#84fced" stroke-width="2" opacity=".45" class="glow-pulse"/>
+<circle cx="410" cy="120" r="10" fill="#84fced"/>
+<text x="410" y="70" fill="#84fced" text-anchor="middle" font-size="13" font-weight="800">2000s</text>
 <text x="410" y="165" fill="#c8d1ec" text-anchor="middle" font-size="12" font-weight="800">Reagent era</text>
 <text x="410" y="185" fill="#666f8c" text-anchor="middle" font-size="11">Dish-research tool</text>
 <circle cx="570" cy="120" r="26" fill="none" stroke="#666f8c" stroke-width="2" opacity=".45" class="glow-pulse"/>
@@ -613,16 +705,83 @@ mini-poll { display: block; }
   <span class="eyebrow"><span class="n">03</span>How it might work</span>
   <h2>How it's <span class="hl">supposed</span> to work</h2>
   <p class="lede">The mechanism mirrors LR3's — free IGF-1 signaling — compressed into minutes. The 'local action' claim is the part with no support.</p>
+<div class="diagram reveal">
+<h4 class="subhead" style="margin-top:0">The receptor pathway, step by step</h4>
+<svg viewBox="0 0 640 330" role="img" aria-label="IGF-1 DES activating the IGF-1 receptor and downstream PI3K-Akt and MAPK signaling">
+<g font-size="12" font-weight="800" text-anchor="middle">
+<g class="nodefire nf1"><circle cx="70" cy="165" r="24" fill="#0b2e2a" stroke="#84fced" stroke-width="2.5"/><text x="70" y="170" fill="#84fced" font-size="11">DES</text></g>
+<text x="70" y="208" fill="#8c96b4" font-size="11" font-weight="600">the fragment</text>
+<g class="nodefire nf2"><rect x="150" y="125" width="110" height="80" rx="14" fill="#070912" stroke="#84fced" stroke-width="2.5"/><text x="205" y="158" fill="#84fced" font-size="13">IGF-1R</text><text x="205" y="178" fill="#8c96b4" font-size="10" font-weight="600">the receptor</text></g>
+<g class="nodefire nf3"><rect x="330" y="50" width="120" height="70" rx="14" fill="#070912" stroke="#22ce8f" stroke-width="2.5"/><text x="390" y="78" fill="#84fced" font-size="12">PI3K → Akt</text><text x="390" y="98" fill="#8c96b4" font-size="10" font-weight="600">growth + survival lane</text></g>
+<g class="nodefire nf4"><rect x="330" y="230" width="120" height="70" rx="14" fill="#070912" stroke="#22ce8f" stroke-width="2.5"/><text x="390" y="258" fill="#84fced" font-size="12">MAPK / ERK</text><text x="390" y="278" fill="#8c96b4" font-size="10" font-weight="600">proliferation lane</text></g>
+<g class="nodefire nf5"><rect x="500" y="115" width="120" height="100" rx="14" fill="#070912" stroke="#fbbf24" stroke-width="2.5"/><text x="560" y="140" fill="#fbbf24" font-size="10">protein synthesis</text><text x="560" y="160" fill="#fbbf24" font-size="10">glucose uptake</text><text x="560" y="180" fill="#fbbf24" font-size="10">cell growth</text><text x="560" y="200" fill="#fbbf24" font-size="10">survival</text></g>
+<path d="M94 165 H150" stroke="#84fced" stroke-width="2.5" fill="none" class="desflow"/>
+<path d="M260 145 L330 90" stroke="#22ce8f" stroke-width="2.5" fill="none" class="desflow"/>
+<path d="M260 185 L330 250" stroke="#22ce8f" stroke-width="2.5" fill="none" class="desflow"/>
+<path d="M450 85 L500 130" stroke="#fbbf24" stroke-width="2.5" fill="none" class="desflow"/>
+<path d="M450 265 L500 200" stroke="#fbbf24" stroke-width="2.5" fill="none" class="desflow"/>
+<circle r="5" fill="#84fced"><animateMotion dur="4.8s" repeatCount="indefinite" path="M94 165 H150"/></circle>
+<circle r="5" fill="#84fced"><animateMotion dur="4.8s" begin="1.2s" repeatCount="indefinite" path="M260 145 L330 90"/></circle>
+<circle r="5" fill="#84fced"><animateMotion dur="4.8s" begin="2.4s" repeatCount="indefinite" path="M450 85 L500 130"/></circle>
+</g>
+<text x="320" y="318" fill="#666f8c" font-size="11" text-anchor="middle">Two signaling lanes, one receptor — shown from cell and animal work, not human trials</text>
+</svg>
+<div class="cap">DES docks on IGF-1R — then the signal splits into growth and proliferation lanes.</div>
+</div>
+<div class="bridge reveal"><strong>One receptor, two downstream highways.</strong> When DES binds the IGF-1 receptor, the receptor fires two main cascades: <strong>PI3K → Akt</strong> (cell growth, protein building, glucose uptake, survival) and <strong>MAPK / ERK</strong> (proliferation signals). This is real, well-mapped biology — demonstrated in cells and animals. What is <strong>not</strong> demonstrated is any of it happening usefully or safely in healthy people taking DES.</div>
   <div class="diagram reveal">
+<div class="diagram reveal">
+<h4 class="subhead" style="margin-top:0">The long way vs the shortcut</h4>
+<svg viewBox="0 0 640 250" role="img" aria-label="GH axis versus direct IGF-1 receptor activation">
+<g font-size="11" font-weight="800" text-anchor="middle">
+<text x="20" y="74" fill="#8c96b4" font-size="11" text-anchor="start" letter-spacing="1">THE LONG WAY</text>
+<g class="nodefire nf1"><circle cx="200" cy="70" r="20" fill="#070912" stroke="#8c96b4" stroke-width="2"/><text x="200" y="74" fill="#c8d1ec" font-size="10">pituitary</text></g>
+<text x="200" y="104" fill="#666f8c" font-size="10" font-weight="600">GH released</text>
+<g class="nodefire nf2"><circle cx="330" cy="70" r="20" fill="#070912" stroke="#8c96b4" stroke-width="2"/><text x="330" y="74" fill="#c8d1ec" font-size="10">liver</text></g>
+<text x="330" y="104" fill="#666f8c" font-size="10" font-weight="600">makes IGF-1</text>
+<g class="nodefire nf3"><circle cx="460" cy="70" r="20" fill="#070912" stroke="#8c96b4" stroke-width="2"/><text x="460" y="74" fill="#c8d1ec" font-size="10">IGF-1R</text></g>
+<text x="460" y="104" fill="#666f8c" font-size="10" font-weight="600">tissues respond</text>
+<path d="M220 70 H310 M350 70 H440" stroke="#8c96b4" stroke-width="2" fill="none" class="desflow"/>
+<circle r="4" fill="#8c96b4"><animateMotion dur="4s" repeatCount="indefinite" path="M220 70 H440"/></circle>
+<text x="20" y="184" fill="#84fced" font-size="11" text-anchor="start" letter-spacing="1">THE SHORTCUT</text>
+<g class="nodefire nf4"><circle cx="200" cy="180" r="20" fill="#0b2e2a" stroke="#84fced" stroke-width="2.5"/><text x="200" y="184" fill="#84fced" font-size="10">DES</text></g>
+<text x="200" y="214" fill="#8c96b4" font-size="10" font-weight="600">the fragment</text>
+<g class="nodefire nf5"><circle cx="460" cy="180" r="20" fill="#0b2e2a" stroke="#84fced" stroke-width="2.5"/><text x="460" y="184" fill="#84fced" font-size="10">IGF-1R</text></g>
+<text x="460" y="214" fill="#8c96b4" font-size="10" font-weight="600">direct hit</text>
+<path d="M220 180 H440" stroke="#84fced" stroke-width="2.5" fill="none" class="desflow"/>
+<circle r="5" fill="#84fced"><animateMotion dur="2.6s" repeatCount="indefinite" path="M220 180 H440"/></circle>
+</g>
+<text x="320" y="242" fill="#666f8c" font-size="11" text-anchor="middle">The shortcut skips every checkpoint the long way has</text>
+</svg>
+<div class="cap">Your body meters IGF-1 through the GH axis. DES skips the metering entirely.</div>
+</div>
     <svg viewBox="0 0 640 240" role="img" aria-label="Four-step proposed mechanism of IGF-1 DES">
-<g font-size="13" font-weight="800" text-anchor="middle"><rect x="20" y="60" width="128" height="120" rx="14" fill="#070912" stroke="#c084fc" stroke-width="2"/><text x="84" y="105" fill="#c084fc" text-anchor="middle" font-size="13" font-weight="800">1 · TRIMMED</text><text x="84" y="130" fill="#8c96b4" text-anchor="middle" font-size="11" font-weight="600">First 3 amino acids</text><text x="84" y="146" fill="#8c96b4" text-anchor="middle" font-size="11" font-weight="600">chopped off</text><rect x="172" y="60" width="128" height="120" rx="14" fill="#070912" stroke="#7e22ce" stroke-width="2"/><text x="236" y="105" fill="#7e22ce" text-anchor="middle" font-size="13" font-weight="800">2 · EVADE</text><text x="236" y="130" fill="#8c96b4" text-anchor="middle" font-size="11" font-weight="600">Binding proteins</text><text x="236" y="146" fill="#8c96b4" text-anchor="middle" font-size="11" font-weight="600">grip it poorly</text><rect x="324" y="60" width="128" height="120" rx="14" fill="#070912" stroke="#c084fc" stroke-width="2"/><text x="388" y="105" fill="#c084fc" text-anchor="middle" font-size="13" font-weight="800">3 · SIGNAL</text><text x="388" y="130" fill="#8c96b4" text-anchor="middle" font-size="11" font-weight="600">Potent IGF-1 receptor</text><text x="388" y="146" fill="#8c96b4" text-anchor="middle" font-size="11" font-weight="600">activation</text><rect x="476" y="60" width="128" height="120" rx="14" fill="#070912" stroke="#7e22ce" stroke-width="2"/><text x="540" y="105" fill="#7e22ce" text-anchor="middle" font-size="13" font-weight="800">4 · VANISH</text><text x="540" y="130" fill="#8c96b4" text-anchor="middle" font-size="11" font-weight="600">Cleared within</text><text x="540" y="146" fill="#8c96b4" text-anchor="middle" font-size="11" font-weight="600">minutes</text></g><g stroke="#666f8c" stroke-width="2" fill="none" stroke-dasharray="6 6"><path d="M148 120 h24" class="flowseq"/><path d="M300 120 h24" class="flowseq2"/><path d="M452 120 h24" class="flow"/></g><text x="320" y="220" fill="#666f8c" font-size="12" text-anchor="middle">Each step is demonstrated in principle — none is confirmed in healthy people using this compound</text>
+<g font-size="13" font-weight="800" text-anchor="middle"><rect x="20" y="60" width="128" height="120" rx="14" fill="#070912" stroke="#84fced" stroke-width="2"/><text x="84" y="105" fill="#84fced" text-anchor="middle" font-size="13" font-weight="800">1 · TRIMMED</text><text x="84" y="130" fill="#8c96b4" text-anchor="middle" font-size="11" font-weight="600">First 3 amino acids</text><text x="84" y="146" fill="#8c96b4" text-anchor="middle" font-size="11" font-weight="600">chopped off</text><rect x="172" y="60" width="128" height="120" rx="14" fill="#070912" stroke="#22ce8f" stroke-width="2"/><text x="236" y="105" fill="#22ce8f" text-anchor="middle" font-size="13" font-weight="800">2 · EVADE</text><text x="236" y="130" fill="#8c96b4" text-anchor="middle" font-size="11" font-weight="600">Binding proteins</text><text x="236" y="146" fill="#8c96b4" text-anchor="middle" font-size="11" font-weight="600">grip it poorly</text><rect x="324" y="60" width="128" height="120" rx="14" fill="#070912" stroke="#84fced" stroke-width="2"/><text x="388" y="105" fill="#84fced" text-anchor="middle" font-size="13" font-weight="800">3 · SIGNAL</text><text x="388" y="130" fill="#8c96b4" text-anchor="middle" font-size="11" font-weight="600">Potent IGF-1 receptor</text><text x="388" y="146" fill="#8c96b4" text-anchor="middle" font-size="11" font-weight="600">activation</text><rect x="476" y="60" width="128" height="120" rx="14" fill="#070912" stroke="#22ce8f" stroke-width="2"/><text x="540" y="105" fill="#22ce8f" text-anchor="middle" font-size="13" font-weight="800">4 · VANISH</text><text x="540" y="130" fill="#8c96b4" text-anchor="middle" font-size="11" font-weight="600">Cleared within</text><text x="540" y="146" fill="#8c96b4" text-anchor="middle" font-size="11" font-weight="600">minutes</text></g><g stroke="#666f8c" stroke-width="2" fill="none" stroke-dasharray="6 6"><path d="M148 120 h24" class="flowseq"/><path d="M300 120 h24" class="flowseq2"/><path d="M452 120 h24" class="flow"/></g><text x="320" y="220" fill="#666f8c" font-size="12" text-anchor="middle">Each step is demonstrated in principle — none is confirmed in healthy people using this compound</text>
     </svg>
     <div class="cap">Trim, evade, signal, vanish: LR3's chain on fast-forward — minus the evidence for local action.</div>
   </div>
-  <div class="ebar"><div class="row"><span class="t">Receptor activation in dishes</span><span class="v">potent, short</span></div><div class="track"><div class="fill" style="--w:80%;background:linear-gradient(90deg,#7e22ce,#c084fc)"></div></div><div class="note">DES potently activates IGF-1 receptors in cell culture — well characterized as a reagent.</div></div>
-  <div class="ebar"><div class="row"><span class="t">Binding-protein evasion</span><span class="v">demonstrated</span></div><div class="track"><div class="fill" style="--w:75%;background:linear-gradient(90deg,#c084fc,#7e22ce)"></div></div><div class="note">The truncation genuinely reduces binding-protein grip — the molecular basis of its potency.</div></div>
-  <div class="ebar"><div class="row"><span class="t">Local/site-specific action</span><span class="v">no evidence</span></div><div class="track"><div class="fill" style="--w:5%;background:linear-gradient(90deg,#282c40,#282c40)"></div></div><div class="note">The forum claim that it works 'where you put it' has <strong>no study behind it</strong> — distribution doesn't work that way.</div></div>
-  <div class="ebar"><div class="row"><span class="t">Benefit in healthy people</span><span class="v">unproven</span></div><div class="track"><div class="fill" style="--w:3%;background:linear-gradient(90deg,#282c40,#282c40)"></div></div><div class="note">No human data of any kind.</div></div>
+  <div class="ebar reveal"><div class="row"><span class="t">Receptor activation in dishes</span><span class="v">potent, short</span></div><div class="track"><div class="fill" style="--w:80%;background:linear-gradient(90deg,#22ce8f,#84fced)"></div></div><div class="note">DES potently activates IGF-1 receptors in cell culture — well characterized as a reagent.</div></div>
+  <div class="ebar reveal"><div class="row"><span class="t">Binding-protein evasion</span><span class="v">demonstrated</span></div><div class="track"><div class="fill" style="--w:75%;background:linear-gradient(90deg,#84fced,#22ce8f)"></div></div><div class="note">The truncation genuinely reduces binding-protein grip — the molecular basis of its potency.</div></div>
+  <div class="ebar reveal"><div class="row"><span class="t">Local/site-specific action</span><span class="v">no evidence</span></div><div class="track"><div class="fill" style="--w:5%;background:linear-gradient(90deg,#282c40,#282c40)"></div></div><div class="note">The forum claim that it works 'where you put it' has <strong>no study behind it</strong> — distribution doesn't work that way.</div></div>
+  <div class="ebar reveal"><div class="row"><span class="t">Benefit in healthy people</span><span class="v">unproven</span></div><div class="track"><div class="fill" style="--w:3%;background:linear-gradient(90deg,#282c40,#282c40)"></div></div><div class="note">No human data of any kind.</div></div>
+<h3 class="subhead reveal">What happens in muscle?</h3>
+<div class="diagram reveal">
+<svg viewBox="0 0 640 240" role="img" aria-label="IGF-1 signaling inside a muscle cell">
+<g font-size="11" font-weight="800" text-anchor="middle">
+<g class="nodefire nf1"><rect x="15" y="80" width="110" height="66" rx="12" fill="#0b2e2a" stroke="#84fced" stroke-width="2.5"/><text x="70" y="106" fill="#84fced" font-size="11">IGF-1R</text><text x="70" y="124" fill="#8c96b4" font-size="10" font-weight="600">on muscle cell</text></g>
+<g class="nodefire nf2"><rect x="140" y="80" width="110" height="66" rx="12" fill="#070912" stroke="#22ce8f" stroke-width="2.5"/><text x="195" y="106" fill="#84fced" font-size="11">Akt ON</text><text x="195" y="124" fill="#8c96b4" font-size="10" font-weight="600">signal fires</text></g>
+<g class="nodefire nf3"><rect x="265" y="80" width="110" height="66" rx="12" fill="#070912" stroke="#22ce8f" stroke-width="2.5"/><text x="320" y="106" fill="#84fced" font-size="11">protein</text><text x="320" y="124" fill="#84fced" font-size="11">synthesis</text></g>
+<g class="nodefire nf4"><rect x="390" y="80" width="110" height="66" rx="12" fill="#070912" stroke="#22ce8f" stroke-width="2.5"/><text x="445" y="106" fill="#84fced" font-size="11">satellite</text><text x="445" y="124" fill="#84fced" font-size="11">cells wake</text></g>
+<g class="nodefire nf5"><rect x="515" y="80" width="110" height="66" rx="12" fill="#070912" stroke="#fbbf24" stroke-width="2.5"/><text x="570" y="106" fill="#fbbf24" font-size="11">fiber</text><text x="570" y="124" fill="#fbbf24" font-size="11">growth</text></g>
+<path d="M125 113 H140 M250 113 H265 M375 113 H390 M500 113 H515" stroke="#84fced" stroke-width="2.5" fill="none" class="desflow"/>
+<circle r="5" fill="#84fced"><animateMotion dur="4.8s" repeatCount="indefinite" path="M125 113 H515"/></circle>
+<circle r="5" fill="#84fced"><animateMotion dur="4.8s" begin="2.4s" repeatCount="indefinite" path="M125 113 H515"/></circle>
+</g>
+<text x="320" y="180" fill="#8c96b4" font-size="12" text-anchor="middle">The proposed chain inside muscle — every link shown in cells, not in people taking DES</text>
+<text x="320" y="204" fill="#666f8c" font-size="11" text-anchor="middle">Satellite cells are the muscle's repair crew; IGF-1 signaling is one of their wake-up calls</text>
+</svg>
+<div class="cap">Receptor → signal → protein building → repair crew → growth. The chain is real; the human outcome is not.</div>
+</div>
   <div class="plain reveal"><div class="plabel">Plain English</div><p>DES does <strong>exactly what LR3 does, briefly</strong>: free IGF-1 signaling, then gone. The forum's favorite extra — that brevity equals <strong>locality</strong> — is pharmacological wishful thinking. Drugs don't read maps; <strong>minutes in the blood still means the whole body</strong>.</p></div>
 </section>
 <mini-poll slug="igf1-des-mini-ch3"
@@ -642,11 +801,11 @@ mini-poll { display: block; }
 
       <text x="20" y="24" fill="#8c96b4" font-size="13" font-weight="700" letter-spacing="2">CLAIM VS EVIDENCE</text>
       <text x="20" y="62" fill="#c8d1ec" font-size="13" font-weight="800">"Potent IGF-1 signaling"</text>
-      <rect x="20" y="72" width="460" height="20" rx="10" fill="#7e22ce" class="glow-pulse"/>
+      <rect x="20" y="72" width="460" height="20" rx="10" fill="#22ce8f" class="glow-pulse"/>
       <text x="490" y="88" fill="#666f8c" font-size="11">dish data</text>
       <text x="20" y="120" fill="#c8d1ec" font-size="13" font-weight="800">"Works only where you put it"</text>
       <rect x="20" y="130" width="12" height="20" rx="10" fill="#282c40"/>
-      <text x="42" y="146" fill="#fb7185" font-size="11" font-weight="700">no evidence at all</text>
+      <text x="42" y="146" fill="#71e9fb" font-size="11" font-weight="700">no evidence at all</text>
       <text x="20" y="188" fill="#c8d1ec" font-size="13" font-weight="800">"Any human benefit"</text>
       <rect x="20" y="198" width="10" height="20" rx="10" fill="#282c40"/>
       <text x="40" y="214" fill="#666f8c" font-size="11">no human data</text>
@@ -654,32 +813,101 @@ mini-poll { display: block; }
     <div class="cap">The claim that built its reputation is the one with the least behind it.</div>
   </div>
   <div class="plain reveal"><div class="plabel">Plain English</div><p>DES has a <strong>two-line résumé</strong>: potent in dishes, natural in the gut. Everything else — the local-action legend, the physique claims — is <strong>forum fan fiction</strong> with no source material.</p></div>
+<h3 class="subhead reveal">What it does vs what it doesn't do</h3>
+<div class="does-grid">
+<div class="does-col reveal"><h3>✅ What the evidence supports</h3>
+<ul>
+<li><span class="evbadge ev-dish">dish data</span><br>Potently activates the IGF-1 receptor in cell culture.</li>
+<li><span class="evbadge ev-dish">dish data</span><br>Evades IGF-binding proteins — the truncation genuinely weakens their grip.</li>
+<li><span class="evbadge ev-context">context</span><br>Clears in minutes — far shorter-acting than LR3.</li>
+<li><span class="evbadge ev-context">context</span><br>Occurs naturally in trace amounts during digestion.</li>
+</ul></div>
+<div class="does-col reveal"><h3>❌ What it doesn't do (no evidence)</h3>
+<ul>
+<li><span class="evbadge ev-none">no evidence</span><br>Act locally "where you put it" — the defining forum claim has zero support.</li>
+<li><span class="evbadge ev-none">no evidence</span><br>Build muscle in healthy people — no human data of any kind.</li>
+<li><span class="evbadge ev-none">no evidence</span><br>Offer a proven safety profile — long-term tissue effects unstudied.</li>
+<li><span class="evbadge ev-none">no evidence</span><br>Qualify as medicine — no trials, no approval, banned in sport.</li>
+</ul></div>
+</div>
+<div class="bridge reveal"><strong>Why the interest, then?</strong> Almost all enthusiasm for DES comes from <strong>experimental and performance-enhancement circles</strong>, not clinics. A potent, short-lived IGF-1 signal is an exciting research tool — and an exciting story. But stories about gym results are not the same as evidence of gym results, and the shortest résumé in this batch belongs to the molecule with the loudest legend.</div>
 </section>
 <mini-poll slug="igf1-des-mini-ch4"
   data-question="Potent in dishes, zero human data — your take?"
   data-answers='[["&#x1F52C;", "Lab proof counts"],["&#x23F3;", "Incomplete picture"],["&#x1F6AB;", "Not enough"],["&#x1F4CA;", "Dishes &#8800; people"]]'>
-</mini-poll><section class="chapter" id="ch5">
-  <span class="eyebrow"><span class="n">05</span>What people say</span>
-  <h2>Reports from the <span class="hl">wild</span></h2>
-  <p class="lede">DES forums are where the 'site growth' myth lives. The reports describe a milder LR3 — and a lot of disappointed expectations.</p>
+</mini-poll>
+<section class="chapter" id="ch-benefits">
+  <span class="eyebrow"><span class="n">05</span>Potential benefits</span>
+  <h2>Potential <span class="hl">benefits</span>, by evidence tier</h2>
+  <p class="lede">The honest version of “what could it do?” — sorted by evidence strength, and staying inside what this page's evidence chapter actually shows.</p>
+  <div class="tier-head reveal"><span class="tbadge est">Established science</span></div>
+  <p class="tier-sub reveal">In humans, this shelf is <strong>empty</strong> — and this page will not fill it with wishes.</p>
+<div class="plain reveal"><div class="plabel">Plain English</div><p><strong>Zero published human trials. No approved use.</strong> There is no established human benefit to list — that is the complete tier, stated plainly rather than padded.</p></div>
+  <div class="tier-head reveal"><span class="tbadge emg">Predicted / emerging</span></div>
+  <p class="tier-sub reveal">Signals from dishes and animals — candidate mechanisms for future research, <strong>not</strong> benefits to claim.</p>
+  <div class="grid3">
+<div class="card sky reveal"><h3>Potent receptor signaling — in cells</h3><p>DES <strong>potently activates the IGF-1 receptor</strong> in cell culture and weakens binding-protein grip — a well-characterized reagent property, not a medical effect.</p></div>
+<div class="card teal reveal"><h3>Anabolic signaling pathways — in cells</h3><p>Receptor firing runs <strong>PI3K → Akt</strong> (protein building, glucose uptake, cell growth, survival) and <strong>MAPK / ERK</strong> cascades — real, well-mapped biology, demonstrated in cells and animals.</p></div>
+<div class="card org reveal"><h3>Muscle-cell chain — in cells</h3><p>Inside muscle, the proposed chain — satellite-cell wake-up calls, protein synthesis — has <strong>every link shown in cells, none in people</strong> taking DES.</p></div>
+  </div>
+<div class="layman reveal"><span class="ldot" aria-hidden="true"></span><div class="llabel">Think of it this way:</div><p>DES is an engine that roars on the dynamometer (the dish) but has never been driven on a public road (no human trial). Horsepower on a test stand is not a commute.</p></div>
+<div class="bridge reveal"><strong>Why it still matters:</strong> potent, short-lived IGF-1 signaling is exactly what makes DES an interesting <strong>research tool</strong>. Interesting to science is not the same as useful to people.</div>
+  <div class="tier-head reveal"><span class="tbadge anecb">Community reports — stories, not data</span></div>
+  <p class="tier-sub reveal">Forum speculation: vivid, unverified, and shaped by belief in the very myth being evaluated.</p>
+<div class="anec reveal"><div class="anec-head"><h4>The “site growth” legend</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“It only works where you put it.” <strong>Caveat:</strong> no study has ever shown local action — the claim is <strong>pure forum folklore</strong>, the most repeated and least supported idea on this page.</p><div class="caveat">Pattern: a legend that outran its source material years ago.</div></div>
+<div class="bridge reveal"><strong>The rest of the chatter</strong> — pump-and-fullness stories, mid-workout pumps, glucose wobbles — is catalogued in <strong>Community Reports</strong> below. Every entry there is an unverified story, not data.</div>
+</section>
+<mini-poll slug="igf1-des-mini-benefits"
+  data-question="Zero human trials — where do possible benefits stand?"
+  data-answers='[["🎯", "Dish signals are a starting point"], ["📊", "Not a benefit until human data"], ["💬", "Forums claim too much"], ["🧭", "Watching the research"]]'>
+</mini-poll>
+<section class="chapter" id="ch-fit">
+  <span class="eyebrow"><span class="n">06</span>Who it may suit</span>
+  <h2>Who it may <span class="hl">suit</span> — and who it may not</h2>
+  <p class="lede">No approved use exists for IGF-1 DES — in any population. This is general information, not personal medical advice.</p>
+<div class="does-grid">
+<div class="does-col reveal"><h3>✅ Who it may be relevant to</h3>
+<ul>
+<li><strong>Laboratory researchers</strong> using DES as a cell-culture reagent to study IGF-1 receptor signaling — its established, actual role.</li>
+<li><strong>That is the honest list.</strong> There is no patient population with an established indication for DES.</li>
+</ul></div>
+<div class="does-col reveal"><h3>🚫 Who it may not suit — extra caution</h3>
+<ul>
+<li><strong>Athletes and tested competitors</strong> — WADA prohibits IGF-1 analogues (S2); a short half-life buys no exemption.</li>
+<li><strong>Anyone seeking muscle growth</strong> — no human data of any kind supports that use.</li>
+<li><strong>People sensitive to blood-sugar swings</strong> — IGF-1-like activity drives glucose into cells; briefer than LR3's effect, but not absent.</li>
+<li><strong>Anyone concerned about abnormal tissue growth</strong> — long-term tissue effects are unstudied.</li>
+<li><strong>Anyone considering gray-market vials</strong> — unregulated products of unknown content and purity; easy to fake.</li>
+</ul></div>
+</div>
+<div class="fitline reveal"><strong>There is no established indication — for anyone.</strong> The pages that follow cover community stories and risks; neither is a recommendation. Talk to a licensed clinician about any health decision.</div>
+</section>
+<mini-poll slug="igf1-des-mini-fit"
+  data-question="No approved use, banned in sport — who is it actually for?"
+  data-answers='[["🎯", "Lab researchers only"], ["📊", "Not athletes — WADA-banned"], ["💬", "Not for muscle goals"], ["🧭", "Not for anyone yet"]]'>
+</mini-poll>
+<section class="chapter" id="ch5">
+  <span class="eyebrow"><span class="n">07</span>Community reports</span>
+  <h2>Community <span class="hl">reports</span></h2>
+  <p class="lede">What people say online about IGF-1 DES — recurring anecdotal themes from forums, Reddit, TikTok, and YouTube, <strong>not clinical evidence</strong>. Expectation shapes these stories heavily.</p>
   <div class="ulegend reveal"><span class="udot" role="img" aria-label="Unverified anecdote"></span><p><strong>Unverified anecdote</strong> — the pulsing dot marks a paraphrased recurring theme from forums and social media: not verified, not evidence.</p></div>
 <div class="anec-grid">
-    <div class="anec reveal"><div class="anec-head"><h4>The site-growth gospel</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Use it on lagging parts — it works locally.” <strong>Caveat:</strong> no evidence supports local action; <strong>belief in the myth shapes the reports</strong>.</p><div class="caveat">Pattern: the founding folklore, self-reinforcing.</div></div>
-    <div class="anec reveal"><div class="anec-head"><h4>Milder than LR3</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Noticeable pump, but nothing like LR3's fullness.” <strong>Caveat:</strong> a shorter-acting drug feeling weaker is <strong>exactly what pharmacology predicts</strong>.</p><div class="caveat">Pattern: expectations vs half-life.</div></div>
-    <div class="anec reveal"><div class="anec-head"><h4>The hypo whisper</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Felt a bit shaky once — ate something, fine.” <strong>Caveat:</strong> even brief IGF-1 signaling can nudge blood sugar; <strong>milder doesn't mean safe</strong>.</p><div class="caveat">Pattern: the risk, miniaturized.</div></div>
-    <div class="anec reveal"><div class="anec-head"><h4>Disappointed</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Expected local growth, got an expensive pump.” <strong>Caveat:</strong> when the myth meets reality, reality usually wins quietly.</p><div class="caveat">Pattern: myth deflation, underreported.</div></div>
-    <div class="anec reveal"><div class="anec-head"><h4>Stacked with LR3</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“DES for the site, LR3 for the system.” <strong>Caveat:</strong> stacking two unproven drugs on a <strong>myth-based division of labor</strong>.</p><div class="caveat">Pattern: folklore as protocol design.</div></div>
-    <div class="anec reveal"><div class="anec-head"><h4>The natural defense</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Your body makes it — how dangerous can it be?” <strong>Caveat:</strong> trace gut amounts ≠ injected concentrate; <strong>'natural' is not a safety argument</strong>.</p><div class="caveat">Pattern: the naturalistic fallacy, peptide edition.</div></div>
-    <div class="anec reveal"><div class="anec-head"><h4>Vial roulette</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“One source's DES felt like nothing at all.” <strong>Caveat:</strong> unregulated products vary; short-acting compounds are <strong>easy to fake</strong>.</p><div class="caveat">Pattern: anecdotes that can't be compared.</div></div>
-    <div class="anec reveal"><div class="anec-head"><h4>The quiet exit</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Tried it, moved on — LR3 gets the attention.” <strong>Caveat:</strong> DES's forum star faded as the myth wore thin; <strong>waning hype is data of a sort</strong>.</p><div class="caveat">Pattern: the lifecycle of a forum fad.</div></div>
+    <div class="anec reveal"><div class="anec-head"><h4>Muscle fullness</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>"Muscles felt fuller for a few hours after." <strong>Caveat:</strong> brief fullness matches a brief signal — and pumps aren't growth.</p><div class="caveat">Pattern: transient pump, reported as progress.</div></div>
+    <div class="anec reveal"><div class="anec-head"><h4>Faster recovery</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>"Soreness faded quicker than usual." <strong>Caveat:</strong> soreness is subjective and training varies week to week.</p><div class="caveat">Pattern: the most common positive claim.</div></div>
+    <div class="anec reveal"><div class="anec-head"><h4>The pump chasers</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>"Crazy pumps mid-workout." <strong>Caveat:</strong> glucose uptake and blood flow explain pumps without any muscle built.</p><div class="caveat">Pattern: acute effects mistaken for anabolism.</div></div>
+    <div class="anec reveal"><div class="anec-head"><h4>Perceived growth</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>"Lagging part finally responded." <strong>Caveat:</strong> no measurements, no controls — and belief in 'site growth' primes the verdict.</p><div class="caveat">Pattern: the myth, self-reported.</div></div>
+    <div class="anec reveal"><div class="anec-head"><h4>Glucose wobbles</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>"Felt shaky and hungry once." <strong>Caveat:</strong> consistent with IGF-1's glucose effects — briefer than LR3's, but real.</p><div class="caveat">Pattern: the miniaturized risk, confirmed anecdotally.</div></div>
+    <div class="anec reveal"><div class="anec-head"><h4>Nothing much</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>"Ran it for weeks — barely noticed anything." <strong>Caveat:</strong> a minutes-long half-life makes 'nothing' the <strong>expected</strong> outcome, not a failure.</p><div class="caveat">Pattern: the quiet majority, underreported.</div></div>
+    <div class="anec reveal"><div class="anec-head"><h4>DES vs LR3 debates</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>"DES for the site, LR3 for everything." <strong>Caveat:</strong> a division of labor built on the unproven local-action claim.</p><div class="caveat">Pattern: folklore as protocol design.</div></div>
+    <div class="anec reveal"><div class="anec-head"><h4>Vial roulette</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>"One batch felt like water." <strong>Caveat:</strong> unregulated, short-acting peptides are easy to underdose or fake.</p><div class="caveat">Pattern: anecdotes that can't be compared.</div></div>
   </div>
-  <div class="folk-note reveal"><p>DES is a case study in how <strong>a claim becomes 'known'</strong> without evidence: repeat 'site growth' enough times and newcomers report it as fact. The myth is the product; the peptide is just the packaging.</p></div>
+<div class="folk-note reveal"><p>These are <strong>unverified stories, not data</strong> — and DES reports are a case study in how a claim becomes "known" without evidence: repeat "site growth" enough times and newcomers report it as fact. The myth is the product; the peptide is just the packaging.</p></div>
 </section>
 <mini-poll slug="igf1-des-mini-ch5"
-  data-question="Forum legends with no evidence — how do you read them?"
+  data-question="Anecdotes vs evidence — where do you land on DES reports?"
   data-answers='[["&#x1F4AC;", "Encouraging"],["&#x1F9C2;", "Salt required"],["&#x1F6AB;", "Folklore"],["&#x2696;&#xFE0F;", "Stories aren&#39;t data"]]'>
 </mini-poll><section class="chapter" id="ch6">
-  <span class="eyebrow"><span class="n">06</span>Risks &amp; unknowns</span>
+  <span class="eyebrow"><span class="n">08</span>Risks &amp; unknowns</span>
   <h2>Risks &amp; <span class="hl">unknowns</span></h2>
   <p class="lede">Shorter-acting than LR3, but the same family of risks in miniature — plus the special hazard of believing the myth.</p>
 <div class="safety-grid">
@@ -696,79 +924,106 @@ mini-poll { display: block; }
   data-question="Which concern stands out most?"
   data-answers='[["&#x1FA78;", "Blood-sugar dips"],["&#x1F3ED;", "What&#39;s in the vial"],["&#x1F9EC;", "Tissue-growth unknowns"],["&#x2753;", "All of it"]]'>
 </mini-poll><section class="chapter" id="ch7">
-  <span class="eyebrow"><span class="n">07</span>Glossary</span>
-  <h2>Speak <span class="hl">growth-factor</span></h2>
-  <p class="lede">Twelve terms, each with the science, an example, and a plain-English translation. Tap any term to expand it.</p>
+  <span class="eyebrow"><span class="n">09</span>Head to head</span>
+  <h2>IGF-1 DES <span class="hl">vs the field</span></h2>
+  <p class="lede">Four relatives, four different stories. None is a proven muscle-builder in people — but they differ sharply in structure, intent, and evidence.</p>
+<div class="vscard-grid">
+    <div class="vscard reveal"><h3>DES vs IGF-1 LR3</h3>
+      <div class="vsk">Structure</div><div class="vsrow">DES: 67 aa, front three chopped. LR3: 83 aa, 13-aa extension added.</div>
+      <div class="vsk">Intended role</div><div class="vsrow">Both dodge binding proteins for free IGF-1R signaling — DES for <b>minutes</b>, LR3 for <b>~a day</b>.</div>
+      <div class="vsk">Evidence</div><div class="vsrow">Both: strong dish data, <b>zero human trials</b>.</div>
+      <div class="vsk">Key difference</div><div class="vsrow"><b>Sprinter vs marathon runner.</b> Same trick, opposite clocks.</div></div>
+    <div class="vscard reveal"><h3>DES vs native IGF-1</h3>
+      <div class="vsk">Structure</div><div class="vsrow">DES is natural IGF-1 minus three N-terminal amino acids.</div>
+      <div class="vsk">Intended role</div><div class="vsrow">Native IGF-1 is an <b>endogenous hormone</b> (~99% bound, tightly regulated). DES is a <b>free fragment</b> with no regulation built in.</div>
+      <div class="vsk">Evidence</div><div class="vsrow">Native IGF-1 (mecasermin) is an <b>approved medicine</b> for growth disorders. DES has <b>no clinical use at all</b>.</div>
+      <div class="vsk">Key difference</div><div class="vsrow"><b>Hormone vs fragment.</b> Sharing a name doesn't share a résumé.</div></div>
+    <div class="vscard reveal"><h3>DES vs MGF</h3>
+      <div class="vsk">Structure</div><div class="vsrow">DES: defined 67-aa IGF-1 fragment. "MGF": an <b>inconsistently defined</b> peptide tied to the IGF-1Ec splice variant.</div>
+      <div class="vsk">Intended role</div><div class="vsrow">DES signals through <b>IGF-1R</b>. MGF is proposed (not proven) to drive <b>local muscle-repair</b> signaling.</div>
+      <div class="vsk">Evidence</div><div class="vsrow">Both thin — and reviews question whether a stable standalone MGF peptide even exists in vivo.</div>
+      <div class="vsk">Key difference</div><div class="vsrow"><b>Defined fragment vs fuzzy concept.</b> DES at least knows what it is.</div></div>
+    <div class="vscard reveal"><h3>DES vs PEG-MGF</h3>
+      <div class="vsk">Structure</div><div class="vsrow">DES: unmodified 67-aa fragment. PEG-MGF: MGF-type peptide plus a <b>polyethylene-glycol</b> attachment.</div>
+      <div class="vsk">Intended role</div><div class="vsrow">PEGylation aims to <b>extend exposure</b> — the opposite philosophy to DES's brief pulse.</div>
+      <div class="vsk">Evidence</div><div class="vsrow">Both experimental; <b>no human clinical evidence</b> for either as a muscle treatment.</div>
+      <div class="vsk">Key difference</div><div class="vsrow"><b>Minutes vs engineered persistence.</b> Opposite bets, same evidence gap.</div></div>
+  </div>
+<div class="verdict reveal"><p style="margin:0"><strong>The honest ranking:</strong> native IGF-1 is the only one with real medicine behind it. LR3 and DES are well-characterized <strong>lab reagents</strong> with opposite half-lives. MGF and PEG-MGF are <strong>murkier concepts</strong> with thinner evidence. None has human data supporting physique use — the comparisons are about <strong>biology, not winners</strong>.</p></div>
+</section>
+<mini-poll slug="igf1-des-mini-ch7"
+  data-question="DES vs LR3 vs the rest — which comparison surprised you most?"
+  data-answers='[["&#x26A1;", "Sprinter vs marathon (LR3)"],["&#x1F9EC;", "Hormone vs fragment (IGF-1)"],["&#x2753;", "The fuzzy MGF concept"],["&#x1F914;", "None — knew this"]]'>
+</mini-poll><section class="chapter" id="ch8">
+  <span class="eyebrow"><span class="n">10</span>Glossary</span>
+  <h2>Understanding <span class="hl">IGF-1 DES</span> terminology</h2>
+  <p class="lede">Fourteen terms, each with the science and a plain-English translation. Tap any term to expand it.</p>
 <div class="gloss">
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#c084fc22"/><path d="M8 24c4-8 8-12 16-12s12 4 16 12-4 12-8 16-8 4-16 4-12-4-16-4-12-8-8-16z" fill="none" stroke="#c084fc" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">IGF-1 DES</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>Des(1-3) IGF-1: IGF-1 missing its first three amino acids. More potent than IGF-1 in dishes, far shorter-acting than LR3.</p>
-      <p class="gex"><span class="gslabel">Example</span>The subject of this page: the truncated sprinter.</p>
-      <div class="plain"><span class="plabel">Plain English</span>IGF-1 with a haircut.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#c084fc22"/><path d="M8 24c4-8 8-12 16-12s12 4 16 12-4 12-8 16-8 4-16 4-12-4-16-4-12-8-8-16z" fill="none" stroke="#84fced" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">IGF-1 DES</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>Des(1-3) IGF-1 is a laboratory-made fragment of insulin-like growth factor 1 in which the first three amino acids of the natural 70-amino-acid chain have been removed, leaving a 67-amino-acid peptide. The truncation changes the molecule&#x27;s shape enough that IGF-binding proteins — which normally trap roughly 99% of circulating IGF-1 — grip it poorly, so more of it stays free and available to receptors. In cell-culture studies it shows greater potency than natural IGF-1, but like free IGF-1 it is cleared from the body within minutes. It has no approved medical use, no human trials, and sits on WADA&#x27;s prohibited list.</p>
+      <div class="plain"><span class="plabel">Plain English</span>Think of IGF-1 as a 70-bead necklace, and DES as the same necklace with the first three beads snipped off. That tiny trim stops the body&#x27;s &#x27;cage&#x27; proteins from grabbing it, so more of it floats free to hit receptors — which is why it punches harder in lab dishes. The tradeoff is that it vanishes from the body within minutes, and it has no approved medical use and no human safety data.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#7e22ce22"/><path d="M10 30h28M10 22h28M10 14h18" fill="none" stroke="#7e22ce" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Truncation</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>Removing amino acids from a protein's end. DES is truncated at the N-terminus (the 'front') — three building blocks gone.</p>
-      <p class="gex"><span class="gslabel">Example</span>The haircut itself: small change, big behavior shift.</p>
-      <div class="plain"><span class="plabel">Plain English</span>Chopping the end off a protein.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#7e22ce22"/><path d="M10 30h28M10 22h28M10 14h18" fill="none" stroke="#22ce8f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Truncation</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>Truncation is the removal of one or more amino acids from either end of a protein or peptide chain, producing a shorter molecule with altered properties. In des(1-3) IGF-1, the truncation removes exactly three amino acids from the N-terminus, the &#x27;starting&#x27; end of the chain. Even a small deletion can change the molecule&#x27;s three-dimensional shape, how long it survives in the body, and how other proteins interact with it. Truncated proteins are common research tools because they let scientists isolate what a specific region of a molecule does.</p>
+      <div class="plain"><span class="plabel">Plain English</span>Truncation just means chopping amino acids off the end of a protein, like trimming the end off a rope. DES is IGF-1 with exactly three links trimmed from the front end. A trim that small can still change how the molecule behaves — which is why researchers use truncated proteins to figure out what each part of a molecule does.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#7e22ce22"/><path d="M24 6v36M12 12l24 24M36 12L12 36" fill="none" stroke="#7e22ce" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">N-terminus</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>The 'front' end of a protein chain, where building starts. DES is missing the first three positions of IGF-1's N-terminus.</p>
-      <p class="gex"><span class="gslabel">Example</span>The end that got trimmed.</p>
-      <div class="plain"><span class="plabel">Plain English</span>A protein's starting end.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#7e22ce22"/><path d="M24 6v36M12 12l24 24M36 12L12 36" fill="none" stroke="#22ce8f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">N-terminus</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>The N-terminus is the &#x27;starting&#x27; end of a protein or peptide chain — the end carrying a free amino group, where cellular machinery begins assembling the chain. Proteins are built strictly in one direction, from the N-terminus to the C-terminus, so every protein has exactly one of each. The first three amino acids of IGF-1&#x27;s N-terminus (positions 1–3) are the ones missing in des(1-3) IGF-1. Because the N-terminal region of IGF-1 is important for binding to IGF-binding proteins, removing it changes how the molecule is carried in blood.</p>
+      <div class="plain"><span class="plabel">Plain English</span>Every protein chain has a beginning and an end — the N-terminus is the beginning end, where the cell started building it. DES is missing the first three links of that beginning end. That matters because IGF-1&#x27;s front end is what the body&#x27;s &#x27;cage&#x27; proteins grab onto, so losing it changes how the molecule travels in the blood.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#c084fc22"/><path d="M8 24h20m-6-6 6 6-6 6M34 24h12m-6-6 6 6-6 6" fill="none" stroke="#c084fc" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">IGF-binding proteins</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>Proteins that trap ~99% of circulating IGF-1. DES's truncation weakens their grip — the shared trick with LR3.</p>
-      <p class="gex"><span class="gslabel">Example</span>The bodyguards, fooled again by a different disguise.</p>
-      <div class="plain"><span class="plabel">Plain English</span>Molecular cages for IGF-1.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#c084fc22"/><path d="M8 24h20m-6-6 6 6-6 6M34 24h12m-6-6 6 6-6 6" fill="none" stroke="#84fced" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">IGF-binding proteins</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>IGF-binding proteins (IGFBPs) are a family of six related proteins that bind insulin-like growth factors in the bloodstream, with roughly 99% of circulating IGF-1 carried in such complexes. By holding IGF-1, they extend its circulating life, keep it from flooding receptors all at once, and deliver it to tissues in a controlled way. The N-terminal region of IGF-1 is a key contact point for these proteins, which is why the des(1-3) truncation weakens their grip. The same weakened grip is shared by IGF-1 LR3, the other engineered IGF-1 analogue — it is the central trick both molecules rely on.</p>
+      <div class="plain"><span class="plabel">Plain English</span>These are the body&#x27;s &#x27;cage&#x27; proteins — they grab about 99% of the IGF-1 in your blood and carry it around in a controlled way, releasing it gradually. They grab on using IGF-1&#x27;s front end, which is exactly the part DES is missing — so the cages can&#x27;t hold it. That&#x27;s DES&#x27;s main trick, and it&#x27;s the same trick its cousin LR3 uses.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#7e22ce22"/><path d="M24 40V16M24 16c-6-4-10-8-10-8m10 8c6-4 10-8 10-8M14 30c4 2 8 2 10 0m10 0c2 2 6 2 10 0" fill="none" stroke="#7e22ce" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Site growth</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>The forum claim that DES acts locally where administered. No evidence supports it — the defining myth of this molecule.</p>
-      <p class="gex"><span class="gslabel">Example</span>The legend: 'put it where you want growth.'</p>
-      <div class="plain"><span class="plabel">Plain English</span>The unproven local-action claim.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#7e22ce22"/><path d="M24 40V16M24 16c-6-4-10-8-10-8m10 8c6-4 10-8 10-8M14 30c4 2 8 2 10 0m10 0c2 2 6 2 10 0" fill="none" stroke="#22ce8f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Site growth</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>Site growth is a claim popular in online forums that injected des(1-3) IGF-1 acts only, or mainly, in the tissue where it is administered — growing the muscle it is placed into rather than acting systemically. It is presented as the molecule&#x27;s defining feature and the reason for its cult following. There is no published evidence supporting local-only action, and the claim sits uneasily with how small peptides distribute after injection. Within this page&#x27;s framing, it is the defining myth of the molecule: widely repeated, never demonstrated.</p>
+      <div class="plain"><span class="plabel">Plain English</span>This is the internet legend that DES grows exactly the muscle you put it into — like spot-growing on demand. It&#x27;s the reason the molecule has such a devoted following. But no study has ever shown that it works that way, and small peptides like this spread through the body rather than staying put — so it remains a story, not a fact.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#c084fc22"/><path d="M10 10h28v28H10zM16 18l16 12M32 18L16 30" fill="none" stroke="#c084fc" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Half-life</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>Time for half a drug to clear. DES: minutes. LR3: about a day. Natural IGF-1 (free): minutes.</p>
-      <p class="gex"><span class="gslabel">Example</span>The sprinter's stat line.</p>
-      <div class="plain"><span class="plabel">Plain English</span>How long a drug sticks around.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#c084fc22"/><path d="M10 10h28v28H10zM16 18l16 12M32 18L16 30" fill="none" stroke="#84fced" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Half-life</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>Half-life is the time it takes for half of a substance to be cleared or broken down in the body, and it determines how long any single exposure lasts. Des(1-3) IGF-1 has a half-life measured in minutes, comparable to free natural IGF-1. By contrast, IGF-1 LR3&#x27;s engineered extension gives it a half-life of roughly a day, which is why the two analogues behave so differently despite their similar tricks. A short half-life means the molecule acts in a brief pulse — and then it is gone.</p>
+      <div class="plain"><span class="plabel">Plain English</span>Half-life is just &#x27;how long before half of it is gone&#x27; — it tells you how long one hit of something lasts. DES burns out in minutes, about the same as free natural IGF-1. Its cousin LR3, engineered with an extension tail, hangs around for roughly a day — same family, totally different staying power.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#7e22ce22"/><path d="M12 8l12 32L36 8M18 8h12" fill="none" stroke="#7e22ce" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Hypoglycemia</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>Low blood sugar from IGF-1 driving glucose into cells. Briefer with DES than LR3 — but not zero.</p>
-      <p class="gex"><span class="gslabel">Example</span>The miniaturized risk.</p>
-      <div class="plain"><span class="plabel">Plain English</span>Blood sugar crashed too low.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#7e22ce22"/><path d="M12 8l12 32L36 8M18 8h12" fill="none" stroke="#22ce8f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Hypoglycemia</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>Hypoglycemia is abnormally low blood sugar, and it is a known risk of IGF-1-type molecules because IGF-1 signaling can drive glucose out of the bloodstream and into cells — an insulin-like effect. Because des(1-3) IGF-1 clears within minutes, this risk window is briefer than with long-acting analogues like LR3. Briefer does not mean absent: the risk is compressed, not eliminated. Any molecule that pushes glucose into cells can overshoot if the amount or timing is wrong.</p>
+      <div class="plain"><span class="plabel">Plain English</span>Hypoglycemia means your blood sugar drops too low. IGF-1-like molecules can push sugar out of the blood and into cells — an insulin-like effect — so blood sugar can crash if things go sideways. With DES the danger window is short because the molecule vanishes in minutes, but short is not the same as zero.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#c084fc22"/><path d="M18 8h12v10l-6 4-6-4zM24 22v14M18 40h12" fill="none" stroke="#c084fc" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Natural occurrence</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>DES is produced in small amounts during digestion when enzymes clip IGF-1. Origin trivia, not a safety certificate.</p>
-      <p class="gex"><span class="gslabel">Example</span>The 'your gut makes it' defense — and why it doesn't count.</p>
-      <div class="plain"><span class="plabel">Plain English</span>Made by the body in tiny amounts.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#c084fc22"/><path d="M18 8h12v10l-6 4-6-4zM24 22v14M18 40h12" fill="none" stroke="#84fced" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Natural occurrence</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>Des(1-3) IGF-1 is not purely a lab invention: small amounts are generated in the digestive tract when enzymes clip the first three amino acids off natural IGF-1 during digestion. This makes it a genuine, naturally occurring fragment — but only in tiny quantities, in the gut, as a breakdown product. A trace digestive byproduct is not evidence that larger, injected amounts are safe or useful. Origin trivia and safety evidence are two completely different things.</p>
+      <div class="plain"><span class="plabel">Plain English</span>Fun fact: your gut actually makes tiny amounts of DES when digestive enzymes chew up IGF-1. So it&#x27;s not 100% artificial — it&#x27;s a real fragment that exists in nature. But &#x27;your gut makes a trace of it as waste&#x27; says nothing about whether injecting larger amounts is safe — that&#x27;s the leap the &#x27;natural&#x27; argument tries to sneak past you.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#7e22ce22"/><path d="M10 30c4-10 10-16 14-16s10 6 14 16M24 14v22" fill="none" stroke="#7e22ce" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Naturalistic fallacy</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>The error of assuming 'natural' means 'safe.' Many natural things are dangerous; dose and context decide.</p>
-      <p class="gex"><span class="gslabel">Example</span>The flaw in the natural defense.</p>
-      <div class="plain"><span class="plabel">Plain English</span>'Natural' ≠ safe.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#7e22ce22"/><path d="M10 30c4-10 10-16 14-16s10 6 14 16M24 14v22" fill="none" stroke="#22ce8f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Naturalistic fallacy</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>The naturalistic fallacy is the logical error of assuming that because something is natural, it must be safe, good, or beneficial. Nature produces some of the most dangerous substances known — venoms, toxins, and pathogens are all perfectly natural. Safety depends on dose, context, purity, and route of exposure, not on whether a molecule also occurs in biology. Applied here, the fact that des(1-3) IGF-1 occurs during digestion tells us nothing about the safety of manufactured, injected quantities.</p>
+      <div class="plain"><span class="plabel">Plain English</span>This is the classic thinking error: &#x27;it&#x27;s natural, so it must be safe.&#x27; Some of the deadliest things on earth — venoms, toxins, deadly bacteria — are 100% natural. What makes something safe is the dose, the context, and the evidence — not where it came from. A trace of DES in your gut doesn&#x27;t make injected DES safe.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#c084fc22"/><path d="M14 34V14m0 0h16v10H14m16 0v10" fill="none" stroke="#c084fc" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Reagent</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>A lab-experiment substance. Like LR3, DES was a dish-research tool before forums adopted it.</p>
-      <p class="gex"><span class="gslabel">Example</span>The original job: lab instrument.</p>
-      <div class="plain"><span class="plabel">Plain English</span>Lab supply for experiments.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#c084fc22"/><path d="M14 34V14m0 0h16v10H14m16 0v10" fill="none" stroke="#84fced" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Reagent</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>A reagent is a substance used in laboratory experiments to cause, measure, or study a chemical or biological reaction — a tool for research, not a product for human use. Both des(1-3) IGF-1 and IGF-1 LR3 began their careers as reagents: precisely defined peptides sold to labs for cell-culture and animal studies. Calling something a reagent says nothing about its safety in people; it describes a purpose, not a risk profile. The leap from lab bench to human use requires clinical trials that, for DES, have never happened.</p>
+      <div class="plain"><span class="plabel">Plain English</span>A reagent is just lab equipment in chemical form — a substance scientists buy to run experiments with, not something meant for people. DES started life as exactly that: a precise lab tool for studying cells in dishes. &#x27;Lab tool&#x27; is a job description, not a safety certificate — and the human trials that would change that have never happened.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#7e22ce22"/><path d="M24 8c8 0 14 6 14 14s-6 14-14 14-14-6-14-14 6-14 14-14zM18 24h12" fill="none" stroke="#7e22ce" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Research chemical</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>An unregulated gray-market category: sold 'for research' with no approved use, no quality oversight, no legal human consumption.</p>
-      <p class="gex"><span class="gslabel">Example</span>The only shelf DES sits on.</p>
-      <div class="plain"><span class="plabel">Plain English</span>Unregulated lab supply sold online.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#7e22ce22"/><path d="M24 8c8 0 14 6 14 14s-6 14-14 14-14-6-14-14 6-14 14-14zM18 24h12" fill="none" stroke="#22ce8f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Research chemical</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>A research chemical is an unregulated gray-market category: substances sold with &#x27;for research use only&#x27; labeling that have no approved medical use and no quality oversight. Products in this category are not manufactured to pharmaceutical standards, so identity, purity, and sterility are unverified. There is no legal human consumption of such products, and no regulator vouches for what is in the vial. For des(1-3) IGF-1, this gray-market shelf is the only place it is sold.</p>
+      <div class="plain"><span class="plabel">Plain English</span>This is the gray-market label slapped on substances sold &#x27;for research only&#x27; — no approved medical use, no quality checks, no regulator confirming what&#x27;s actually in the vial. It&#x27;s the Wild West of chemistry: what the label claims and what&#x27;s inside can be two different things. For DES, this unregulated shelf is the only place it exists.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#c084fc22"/><path d="M8 14h32M8 24h32M8 34h32M14 8v32M34 8v32" fill="none" stroke="#c084fc" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">WADA S2</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>The World Anti-Doping Agency's prohibited-list category for peptide hormones, growth factors, and related substances — including IGF-1 analogues.</p>
-      <p class="gex"><span class="gslabel">Example</span>The ban, regardless of half-life.</p>
-      <div class="plain"><span class="plabel">Plain English</span>Sports' banned list for growth factors.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#c084fc22"/><path d="M8 14h32M8 24h32M8 34h32M14 8v32M34 8v32" fill="none" stroke="#84fced" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">WADA S2</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>WADA S2 is the section of the World Anti-Doping Agency&#x27;s Prohibited List covering peptide hormones, growth factors, related substances, and mimetics — banned at all times, in and out of competition. IGF-1 analogues, including des(1-3) IGF-1, fall squarely in this category regardless of their half-life or potency. A short half-life does not make a substance harder to ban or less prohibited; the rule covers the molecule, not its duration. Athletes subject to testing face sanctions for its use, full stop.</p>
+      <div class="plain"><span class="plabel">Plain English</span>WADA is sports&#x27; global drug police, and S2 is their banned-list category for peptide hormones and growth factors — banned year-round, not just on game day. DES is an IGF-1 analogue, so it&#x27;s on that list no matter how fast it clears your system. &#x27;It&#x27;s gone in minutes&#x27; is not a loophole — the ban covers the molecule itself.</div>
+    </div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#c084fc22"/><path d="M24 6v10m0 16v10M12 24h8m8 0h8M24 16l-6 8h12z" fill="none" stroke="#84fced" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">IGF-1R</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>IGF-1R — the IGF-1 receptor — is a cell-surface receptor that binds IGF-1 and closely related analogues such as des(1-3) IGF-1. It is a receptor tyrosine kinase: when a matching molecule docks, the receptor activates itself and switches on internal signaling cascades. The two main cascades are the PI3K/Akt pathway, driving growth and survival signals, and the MAPK pathway, driving proliferation signals. Nearly everything attributed to DES in this infographic flows through this single molecular switch.</p>
+      <div class="plain"><span class="plabel">Plain English</span>IGF-1R is the &#x27;lock&#x27; on the surface of cells that IGF-1-shaped &#x27;keys&#x27; fit into — and DES is shaped close enough to turn it. When the key turns, the receptor fires off internal signals telling the cell to grow, survive, and divide. It&#x27;s the ignition switch for everything this page describes DES doing — one lock, two signal wires running from it.</div>
+    </div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#7e22ce22"/><path d="M8 32c6-14 12-20 16-20s10 6 16 20M8 40h32" fill="none" stroke="#22ce8f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">PI3K / Akt</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>The PI3K/Akt pathway is one of the two main signaling cascades switched on inside the cell when IGF-1R is activated — the other being the MAPK cascade. PI3K (phosphoinositide 3-kinase) generates a lipid messenger that recruits and activates Akt, a protein kinase that then coordinates multiple downstream effects. Those effects include increased glucose uptake, increased protein synthesis, promotion of cell growth, and suppression of cell-death programs. In short, it is the cell&#x27;s &#x27;build and survive&#x27; wiring — and the lane DES travels when it binds the receptor.</p>
+      <div class="plain"><span class="plabel">Plain English</span>This is one of the two &#x27;wires&#x27; that run from the IGF-1 receptor into the cell — the other is called MAPK. When DES turns the receptor&#x27;s key, this wire carries a &#x27;build and survive&#x27; message: take in more sugar, make more protein, grow, and don&#x27;t die. It&#x27;s the cell&#x27;s construction-and-security system, and DES flips its switch.</div>
     </div></div>
 </div>
 </section>
-<mini-poll slug="igf1-des-mini-ch7"
+<mini-poll slug="igf1-des-mini-ch8"
   data-question="Which concept clicked most?"
   data-answers='[["&#x2702;&#xFE0F;", "The truncation"],["&#x23F1;&#xFE0F;", "Minutes vs a day"],["&#x1F914;", "The naturalistic fallacy"],["&#x1F4D6;", "Still fuzzy"]]'>
-</mini-poll><section class="chapter" id="ch8">
-  <span class="eyebrow"><span class="n">08</span>Takeaways</span>
+</mini-poll><section class="chapter" id="ch9">
+  <span class="eyebrow"><span class="n">11</span>Takeaways</span>
   <h2>The <span class="hl">bottom line</span></h2>
-  <p class="lede">Eight chapters, distilled. What the molecule is, what the evidence says, and what would have to change.</p>
+  <p class="lede">Eleven chapters, distilled. What the molecule is, what the evidence says, and what would have to change.</p>
 <div class="take-grid">
     <div class="take reveal"><div class="tk">✂️</div><h4>IGF-1, truncated</h4><p>DES is IGF-1 <strong>minus its first three amino acids</strong> — a truncation that weakens binding-protein grip.</p></div>
     <div class="take reveal"><div class="tk">⚡</div><h4>Potent but fleeting</h4><p>More potent than IGF-1 in dishes, with a <strong>half-life of minutes</strong> — LR3's chain on fast-forward.</p></div>
@@ -789,7 +1044,7 @@ mini-poll { display: block; }
       <li><strong>No medical advice.</strong> Nothing here is a recommendation for or against any treatment. Talk to a licensed clinician about any health decision.</li>
     </ul>
   </div>
-<mini-poll slug="igf1-des-mini-ch8"
+<mini-poll slug="igf1-des-mini-ch9"
   data-question="How would you rate this infographic?"
   data-answers='[["&#x1F60D;", "&#11088;&#11088;&#11088;&#11088;&#11088; · Loved it"], ["&#x1F642;", "&#11088;&#11088;&#11088;&#11088; · Good stuff"], ["&#x1F610;", "&#11088;&#11088;&#11088; · It&#39;s okay"]]'>
 </mini-poll>
@@ -814,6 +1069,7 @@ mini-poll { display: block; }
 (function(){
 "use strict";
 var reduced=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+if(reduced){document.querySelectorAll("svg").forEach(function(s){try{if(s.pauseAnimations)s.pauseAnimations();}catch(e){}});}
 /* ---------- theme ---------- */
 function setTheme(t){
   document.documentElement.setAttribute("data-theme",t);
@@ -834,7 +1090,7 @@ setTheme(document.documentElement.getAttribute("data-theme")==="light"?"light":"
   function size(){W=window.innerWidth;H=window.innerHeight;svg.setAttribute("viewBox","0 0 "+W+" "+H);}
   size();window.addEventListener("resize",size);
   var NS="http://www.w3.org/2000/svg";
-  var colors=["#c084fc","#7e22ce","#c084fc","#7e22ce","#c084fc","#7e22ce"];
+  var colors=["#84fced","#22ce8f","#84fced","#22ce8f","#84fced","#22ce8f"];
   for(var i=0;i<140;i++){
     var c=document.createElementNS(NS,"circle");
     var col=colors[i%colors.length];
@@ -941,7 +1197,7 @@ var bar=document.getElementById("progress"),
     tocBar=document.getElementById("tocBar"),tocPct=document.getElementById("tocPct"),
     links=Array.prototype.slice.call(document.querySelectorAll(".toc a, nav.chapters a")),
     rail=document.getElementById("rail"),
-    sections=["ch1","ch2","ch3","ch4","ch5","ch6","ch7","ch8","ch9"].map(function(id){return document.getElementById(id);}),
+    sections=["ch1","ch2","ch3","ch4","ch-benefits","ch-fit","ch5","ch6","ch7","ch8","ch9"].map(function(id){return document.getElementById(id);}),
     pill=document.querySelector(".toc-pill"),cur=-1,ticking=false;
 function easeWidth(el,v){el.style.width=v+"%";}
 function update(){
@@ -956,8 +1212,9 @@ function update(){
   sections.forEach(function(s,i){if(s&&s.getBoundingClientRect().top<window.innerHeight*0.4)idx=i;});
   if(idx!==cur){
     cur=idx;
+    var curHash=sections[idx]?"#"+sections[idx].id:null;
     links.forEach(function(a){a.classList.remove("active");});
-    links.forEach(function(a){if(a.getAttribute("href")==="#ch"+(idx+1))a.classList.add("active");});
+    links.forEach(function(a){if(a.getAttribute("href")===curHash)a.classList.add("active");});
     var active=document.querySelector(".toc a.active");
     if(active&&pill){
       var tocEl=document.querySelector(".toc"),
@@ -966,7 +1223,7 @@ function update(){
       pill.style.height=active.offsetHeight+"px";
       pill.style.transform="translateY("+Math.round(ar.top-tr.top)+"px)";
       if(rail&&window.innerWidth<1200){
-        var ra=rail.querySelector('a[href="#ch'+(idx+1)+'"]');
+        var ra=curHash?rail.querySelector('a[href="'+curHash+'"]'):null;
         if(ra)rail.scrollTo({left:ra.offsetLeft-24,behavior:reduced?"auto":"smooth"});
       }
     }else if(pill){pill.style.opacity="0";}
@@ -984,7 +1241,7 @@ function fireConfetti(){
   var c=document.getElementById("confetti"),ctx=c.getContext("2d");
   c.width=window.innerWidth;c.height=window.innerHeight;
   c.classList.add("show");
-  var cols=["#c084fc","#7e22ce","#3b0764","#fbbf24","#c8d1ec"],parts=[];
+  var cols=["#84fced","#22ce8f","#076442","#fbbf24","#c8d1ec"],parts=[];
   for(var i=0;i<45;i++)parts.push({x:Math.random()*c.width,y:-20-Math.random()*c.height*0.25,
     w:4+Math.random()*4,h:5+Math.random()*5,c:cols[i%cols.length],
     vy:0.7+Math.random()*1.1,ph:Math.random()*Math.PI*2,sw:0.4+Math.random()*0.8,
@@ -1020,12 +1277,12 @@ fio.observe(document.querySelector("footer"));
 /* Mini-poll backend config. Empty = preview mode (local votes, 3-day cooldown).
    To go live: fill in your Supabase project URL + anon key (see poll-admin README). */
 window.MINI_POLL_CONFIG = { supabaseUrl: "", anonKey: "", turnstileSiteKey: "",
-  accents: ["#c084fc", "#a053e7", "#7e22ce", "#5e288a", "#3b0764", "#7936ae", "#fbbf24", "#fb7185", "#d2a9fc"] };
+  accents: ["#84fced", "#53e7b1", "#22ce8f", "#288a67", "#076442", "#36ae83", "#fbbf24", "#71e9fb", "#a9fcf2"] };
 </script>
 <script>
 /* Mini-poll web component — vanilla JS, no dependencies.
    Usage:
-     <mini-poll slug="example-mini-ch1"
+     <mini-poll slug="igf1-des-mini-recap"
        data-question="Had you heard of this compound before today?"
        data-answers='[["🆕","No — brand new to me"],["👀","Heard the name"]]'>
      </mini-poll>
@@ -1104,8 +1361,8 @@ window.MINI_POLL_CONFIG = { supabaseUrl: "", anonKey: "", turnstileSiteKey: "",
      Palette comes from window.MINI_POLL_CONFIG.accents when the page sets one,
      otherwise the default nine-color set. */
   var ACCENTS = (window.MINI_POLL_CONFIG && window.MINI_POLL_CONFIG.accents) ||
-                ['#fdba74', '#a3e635', '#fb923c', '#865df6', '#f472b6',
-                 '#a3e635', '#fbbf24', '#fb7185', '#22d3ee'];
+                ['#fbd676', '#a3e635', '#fac53d', '#5df6e3', '#72e3f4',
+                 '#a3e635', '#fbbf24', '#71e9fb', '#22d3ee'];
   function pollAccents(slug) {
     var m = /ch(\d+)/.exec(slug || '');
     var i = m ? parseInt(m[1], 10) - 1 : 0;
